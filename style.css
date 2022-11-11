@@ -1,0 +1,380 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html, body {
+    height: 100%;
+}
+/* end css reset */
+
+
+/* custom animation */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* end custom animation */
+
+
+body {
+    /* set poppins as the default font */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: #1e1e20;
+}
+
+.flex-container {
+    display: flex;
+    gap: 3rem;
+}
+
+#head {
+    min-height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(117deg, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 35%);
+    padding: 0 4rem;
+    border-radius: 0 0 5rem 5rem;
+}
+
+#content {
+    padding: 0 4rem;
+}
+
+header {
+    border-bottom: 1px solid rgb(193, 193, 193);
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    color: #2a2a2c;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav ul li {
+    user-select: none;
+    cursor: pointer;
+}
+
+#logo {    
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lin-grad {
+    background-color: rgb(255,255,255);;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(90deg, rgba(85,85,88,1) 0%, rgba(42,42,44,1) 50%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.btn {
+    padding: .75rem 1.25rem;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-black {    
+    color: #fff;
+    background-color: #2a2a2c;
+    border: 1px solid #2a2a2c;
+}
+
+.btn-light {  
+    color: #2a2a2c;  
+    background-color: rgba(221,221,221,1);
+    border: 1px solid rgba(221,221,221,1);
+}
+
+.btn svg {
+    margin-left: 0.2rem;
+    height: 1.2rem;
+    width: auto;
+    stroke: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(1.5px);
+}
+
+.btn:hover svg {
+    transform: translate3d(0.2rem, -.1rem, 0);
+}
+
+.btn-light svg {
+    stroke: #2a2a2c;
+}
+
+.btn-black:hover {
+    background-color: rgba(221,221,221,1);
+    color: #2a2a2c;
+    border: 1px solid #2a2a2c;
+}
+
+.btn-black:hover svg {
+    stroke: #2a2a2c;
+}
+
+.btn-light:hover svg {
+    stroke: rgba(221,221,221,1);
+}
+
+.btn-light:hover {
+    background-color: #1e1e20;
+    color: rgba(221,221,221,1);
+    border: 1px solid rgba(221,221,221,1);
+}
+
+#home {
+    display: flex;
+    margin: 4rem 0;
+}
+
+#home div:nth-child(1), #home div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home div:nth-child(2) {
+    justify-content: space-between;
+}
+
+#home div:nth-child(2) p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: rgb(60, 60, 60);
+}
+
+.txt-very-fat {
+    font-weight: 600;
+    font-size: 9rem;
+    letter-spacing: -0.5rem;
+}
+
+.icon {
+    padding: 7px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+.counter {
+    display: flex;
+    color: #0170ba;
+    font-weight: 700;
+    font-size: 8rem;
+}
+
+.counter div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.counter div span:nth-child(1) {
+    font-size: 10rem;
+    font-weight: 700;
+    color: #dadada;
+}
+
+.counter div span:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #6e6e6e;
+}
+
+.lang {
+    margin: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.single-lang {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.single-lang h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #dadada;
+}
+
+.single-lang p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #dadada7a;
+    text-align: center;
+}
+
+.flag-container {
+    margin-bottom: 1rem;
+    padding: 3rem;
+    background: rgb(6,56,98);
+    background: radial-gradient(circle, rgba(6,56,98,1) 78%, rgba(13,75,129,1) 100%);
+    border-radius: 1000px;    
+}
+
+.lang div:nth-child(3) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #969696;
+}
+
+.flag {    
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1000px;
+    transition: all 250ms ease-in-out;
+}
+
+.flag:hover {
+    animation: float 1.5s ease-in-out infinite;
+}
+
+.section-title {
+    font-size: 6rem;
+    font-weight: 400;
+    text-align: center;
+    color: #dadada;    
+    letter-spacing: -0.2rem;
+    text-transform: uppercase;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+    gap: 4rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    transform: slideInFromTop;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
