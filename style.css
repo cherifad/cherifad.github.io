@@ -172,12 +172,49 @@ body {
     gap: 3rem;
 }
 
+.hide {
+    animation: slideInFromRight 250ms reverse;
+}
+
+#back-to-top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 12px;
+    right: 12px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInFromRight 250ms;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#back-to-top.hide {
+    animation: slideInFromRight 250ms reverse;
+}
+
+#back-to-top:hover {
+    transform: translateY(-5px);
+}
+
+#back-to-top:hover img {
+    transform: translateY(-5px);
+}
+
 #head {
-    min-height: 100vh;
+    min-height: 80vh;
     background: rgb(255,255,255);
     background: linear-gradient(117deg, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 35%);
     padding: 0 4rem;
     border-radius: 0 0 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #content {
@@ -298,6 +335,8 @@ nav ul li {
 #home {
     display: flex;
     margin: 4rem 0;
+    align-items: center;
+    flex: 1;
 }
 
 #home div:nth-child(1), #home div:nth-child(2) {
@@ -319,6 +358,11 @@ nav ul li {
     color: rgb(60, 60, 60);
 }
 
+.f-row {
+    display: flex;
+    flex-direction: row !important;
+    gap: 1rem;
+}
 .txt-very-fat {
     font-weight: 600;
     font-size: 9rem;
@@ -327,8 +371,13 @@ nav ul li {
 
 .icon {
     padding: 7px;
+    margin-top: 2rem;
     background-color: black;
     border-radius: 100px;
+}
+
+.icon svg {
+    cursor: pointer;
 }
 
 .counter {
@@ -726,3 +775,51 @@ footer > div:nth-child(1) div {
     gap: 1rem;
     align-items: center;
 }
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .popup.fade-in {
+    animation: fadeIn 0.5s;
+  }
+  
+  .popup.fade-out {
+    animation: fadeOut 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+ 
