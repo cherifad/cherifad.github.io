@@ -146,4 +146,99 @@ function createPopup(html) {
   }, 10);
 }
 
-createPopup("<h1>Hello!</h1><p>This is a popup with some <strong>HTML</strong> content.</p>");
+function singleItem(title, description, image, link, author, date) {
+  return `<div class="single-item">
+  <div class="single-item-image">
+    <img src="${image}" alt="">
+  </div>
+  <div class="single-item-content">
+    <h3>${title}</h3>
+    <p>${description}</p>
+    <a href="${link}">Voir le projet</a>
+  </div>
+  <div class="single-item-author">
+    <p>Par ${author}</p>
+    <p>Le ${date}</p>
+  </div>
+</div>`;
+}
+
+function previewItem(title, description, image, link, author, date, classe=null) {
+  return `<div class="preview-item single-xp ${classe ? classe : ''}">
+  <div class="preview-item-image">
+    <img src="${image}" alt="${title + ' image'}">
+  </div>
+  <div class="preview-item-content">
+    <h3>${title}</h3>
+    <p class="desc">${description}</p>
+    <a class="btn btn-light" href="${link}">Voir le projet</a>
+  </div>
+  <div class="preview-item-author">
+    <p>Par ${author}</p>
+    <p>${date}</p>
+  </div>
+</div>`;
+}
+
+// createPopup("<h1>Hello!</h1><p>This is a popup with some <strong>HTML</strong> content.</p>");
+
+function genrateAllItems() {
+  const allItems = document.getElementById("preview-items");
+
+  fetch("../../data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      // loop through the data and create a new item for each
+      data.forEach((item) => {
+        allItems.innerHTML += previewItem(
+          item.title,
+          item.description,
+          item.image[0],
+          item.link,
+          item.author,
+          item.date
+        );
+      });
+    });
+}
+
+// animate the skills bars
+
+// Get the skill progress bar element
+const skillProgressBar = document.querySelectorAll('.skill-bar');
+
+skillProgressBar.forEach((bar) => {
+  
+  const progressBar = bar.querySelector('.skill-progress-bar');
+  const skillPercent = progressBar.getAttribute("data-percent");
+
+  // Set the starting and ending values for the animation
+  const startValue = 0;
+  const endValue = skillPercent;
+  const startTime = performance.now();
+
+  // Set the duration of the animation in milliseconds
+  const duration = 2000;
+
+  window.requestAnimationFrame(function animate(time) {
+    // Calculate the time elapsed since the start of the animation
+    const elapsed = time - startTime;
+  
+    // Calculate the value for the skill progress bar width at the current time
+    const value = startValue + (endValue - startValue) * (elapsed / duration);
+  
+    // Set the width of the skill progress bar to the calculated value
+    progressBar.style.width = `${value}%`;
+  
+    // If the animation is not complete, request another animation frame
+    if (elapsed < duration) {
+      window.requestAnimationFrame(animate);
+    }
+  });
+});
+
+
+
+// Animate the skill progress bar
+
+  

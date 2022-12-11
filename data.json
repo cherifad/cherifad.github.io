@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "title": "Croustillant",
+        "description": "Un bot discord pour donner les menus du restaurant universitaire d'Annecy. Les données proviennent du site du restaurant.",
+        "link": "https://github.com/cherifad/Crous-tillant",
+        "image": [
+            "./assets/img/projects-img/Croustillant/single_message.png"
+        ],
+        "author": "Adlen Cherif",
+        "date": "2021"
+    },
+    {
+        "id": 2,
+        "title": "EDT parser",
+        "description": "Un parser prenant en entrée un fichier .ics et renvoyant un fichier .json contenant les informations de l'emploi du temps formatées selon un schéma plus pratique.",
+        "link": "https://github.com/cherifad/edt-iut",
+        "image": [
+            "https://placebear.com/640/360",
+            "./assets/img/projects-img/EDT - Parser"
+        ],
+        "author": "Adlen Cherif",
+        "date": "2022"
+    },
+    {
+        "id": 3,
+        "title": "EDT - Web",
+        "description": "Un site web permettant de visualiser l'emploi du temps d'un étudiant de l'IUT d'Annecy. Les données proviennent du parser EDT parser.",
+        "link": "http://www.iutannecy-deptinfo.fr/info2/cherad/edt/",
+        "image": [
+            "./assets/img/projects-img/EDT - Web/dark_details_screen.png",
+            "./assets/img/projects-img/EDT - Web/edt.png"
+        ],
+        "author": "Adlen Cherif",
+        "date": "2022"
+    },
+    {
+        "id": 4,
+        "title": "G-Product",
+        "description": "Un site web réalisé avec wordpress et plus particulièrement Elementor. Le template utilisé a été creé de toutes pièces par moi-même.",
+        "link": "https://gproduct.fr/",
+        "image": [
+            "https://placekitten.com/640/360",
+            "./assets/img/projects-img/G-Product"
+        ],
+        "author": "Adlen Cherif",
+        "date": "2021"
+    },
+    {
+        "id": 5,
+        "title": "Portfolio",
+        "description": "Mon portfolio réalisé avec HTML, CSS et JS. Il est hébergé sur Github.",
+        "link": "",
+        "image": [
+            "https://loremflickr.com/640/360",
+            "./assets/img/projects-img/Portfolio"
+        ],
+        "author": "Adlen Cherif",
+        "date": "2021"
+    },
+    {
+        "id": 6,
+        "title": "VueMovie",
+        "description": "Un site web permettant de rechercher des films et séries. Les données proviennent de l'API The Movie Database.",
+        "link": "https://vue-movie.vercel.app/",
+        "image": [
+            "https://placebeard.it/640x360",
+            "./assets/img/projects-img/VueMovie"
+        ],
+        "author": "Adlen Cherif",
+        "date": "2022"
+    }
+]   
