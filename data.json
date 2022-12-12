@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Croustillant",
+        "title": "Crous'tillant",
         "description": "Un bot discord pour donner les menus du restaurant universitaire d'Annecy. Les données proviennent du site du restaurant.",
         "link": "https://github.com/cherifad/Crous-tillant",
         "image": [
