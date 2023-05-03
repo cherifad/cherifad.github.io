@@ -62,7 +62,7 @@
         "id": 6,
         "title": "VueMovie",
         "description": "Un site web permettant de rechercher des films et séries. Les données proviennent de l'API The Movie Database.",
-        "link": "https://vue-movie.vercel.app/",
+        "link": "#",
         "image": [
             "https://placebeard.it/640x360",
             "./assets/img/projects-img/VueMovie"
