@@ -1,11 +1,13 @@
 <template>
-    <div id="head" class="min-h-[80vh] rounded-b-3xl px-16">
+    <div id="head" class="min-h-[80vh] rounded-b-3xl lg:px-16 px-9 flex flex-col">
         <Header />
+        <Home />
     </div>
 </template>
 
 <script setup lang="ts">
 import Header from "@/components/nav/Header.vue";
+import Home from "@/components/Home.vue";
 </script>
 
 <style>
