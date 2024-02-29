@@ -1,5 +1,6 @@
 <template>
     <HeadComponent />
+    <ContactForm />
 </template>
 
 <script setup lang="ts">

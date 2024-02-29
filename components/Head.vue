@@ -1,5 +1,5 @@
 <template>
-    <div id="head" class="min-h-[80vh] rounded-b-3xl lg:px-16 px-9 flex flex-col">
+    <div id="head" class="lg:min-h-[80vh] min-h-[60vh] rounded-b-3xl lg:px-16 px-9 flex flex-col">
         <Header />
         <Home />
     </div>
