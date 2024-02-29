@@ -3,5 +3,9 @@
     "Header.Menu.Projects": "Projets",
     "Header.Menu.Skills": "Compétences",
     "Header.Menu.Contact": "Contactez-moi",
-    "Home.Content": " Salut, je suis Adlen, Développeur full stack junior, je suis passionné par le développement web et mobile, je suis à la recherche d'un stage dans le domaine du développement web et mobile. "
+    "Home.Content": " Salut, je suis Adlen, Développeur full stack junior, je suis passionné par le développement web et mobile, je suis à la recherche d'un stage dans le domaine du développement web et mobile. ",
+    "Home.Button.Contact": "Contactez-moi",
+    "Home.Button.Resume": "Télécharger mon CV",
+    "Footer.Credits.Icons": "Icones de",
+    "Footer.Credits.Sources": "Sources"
 }
