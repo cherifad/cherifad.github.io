@@ -46,13 +46,16 @@
           </div>
         </div>
       </div> -->
-    <form class="flex flex-col gap-4">
-        <label for="name" class="text-xl font-light uppercase">Name</label>
-        <input type="text" placeholder="Name" class="py-3 px-5 rounded-full text-xl font-light uppercase transition duration-300 ease-in-out" />
-        <input type="email" placeholder="Email" class="py-3 px-5 rounded-full text-xl font-light uppercase transition duration-300 ease-in-out" />
-        <textarea placeholder="Message" class="py-3 px-5 rounded-xl text-xl font-light uppercase transition duration-300 ease-in-out" />
-        <Button text="Send" />
-    </form>
+      <div>
+        <SectionHeader title="Parcours académique" description=" J'aime apprendre de nouveaux langages de programmation et je suis très à l'aise avec les langages de programmation tels que HTML, Python et JavaScript. Je suis également compétent en matière de développement Web et d'utilisation de frameworks tels que React et VueJs. Je suis également compétent en matière de bases de données et d'utilisation des systèmes de gestion de base de données tels que MySQL, PostgresSQL, FireBase " />
+      <form class="flex flex-col gap-4">
+          <label for="name" class="text-xl font-light uppercase">Name</label>
+          <input type="text" placeholder="Name" class="py-3 px-5 rounded-full text-xl font-light uppercase transition duration-300 ease-in-out" />
+          <input type="email" placeholder="Email" class="py-3 px-5 rounded-full text-xl font-light uppercase transition duration-300 ease-in-out" />
+          <textarea placeholder="Message" class="py-3 px-5 rounded-xl text-xl font-light uppercase transition duration-300 ease-in-out" />
+          <Button text="Send" />
+      </form>
+      </div>
 </template>
 
 <script setup lang="ts">
