@@ -12,19 +12,19 @@ export default defineNuxtConfig({
     strategy: "prefix_except_default",
     locales: [
       {
-        code: "en-US",
-        iso: "en-US",
-        name: "English(US)",
+        code: "en",
+        iso: "en",
+        name: "English",
         file: "en.json",
       },
       {
-        code: "fr-FR",
-        iso: "fr-FR",
+        code: "fr",
+        iso: "fr",
         name: "Français",
         file: "fr.json",
       },
     ],
-    defaultLocale: "fr-FR",
+    defaultLocale: "fr",
   },
   css: ["~/assets/css/style.css"],
 });
