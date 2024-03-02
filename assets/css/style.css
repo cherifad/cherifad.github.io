@@ -5,6 +5,7 @@ body, html {
     font-family: 'Poppins', sans-serif;
     background-color: #1e1e20;
     transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 .lin-grad {

@@ -1,8 +1,9 @@
 <template>
-    <button id="btn" :class="{
+    <button id="btn" :disabled="disabled" :class="{
         'py-3 px-5 rounded-full text-xl font-light uppercase transition duration-300 ease-in-out flex justify-between items-center gap-2': true,
         'text-white bg-[#1e1e20] border border-[#1e1e20] hover:bg-gray-200 hover:text-[#1e1e20]': isBlack,
-        'text-[#1e1e20] bg-gray-200 border border-gray-200 hover:bg-[#1e1e20] hover:text-white': !isBlack
+        'text-[#1e1e20] bg-gray-200 border border-gray-200 hover:bg-[#1e1e20] hover:text-white': !isBlack,
+        'cursor-not-allowed opacity-50': disabled
     }">
         {{ text }}
         <Icon v-if="icon" :name="icon" :class="{
@@ -26,6 +27,10 @@ defineProps({
     transition: {
         type: String,
         default: null
+    },
+    disabled: {
+        type: Boolean,
+        default: false
     }
 })
 

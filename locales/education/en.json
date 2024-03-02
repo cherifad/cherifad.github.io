@@ -1,0 +1,21 @@
+{
+    "SectionEducationList": [
+        {
+            "Title": "Two-thirds Completion of Bachelor's Degree in Computer Science",
+            "Year": "2021-2022",
+            "Place": "IUT Annecy, Haute-Savoie, France",
+            "KeysInformations": [
+                "Computer Science",
+                "Course: application development, design and validation"
+            ]
+        },
+        {
+            "Title": "Computer Engineering Apprentice",
+            "Year": "Since 2023",
+            "Place": "CPE LYON 🚀, Rhône, France",
+            "KeysInformations": [
+                "IT & Communication Networks"
+            ]
+        }
+    ]
+}

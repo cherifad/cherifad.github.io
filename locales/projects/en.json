@@ -1,0 +1,130 @@
+{
+    "SectionProjectsList": [
+        {
+            "Title": "Project 1",
+            "Description": "Description 1",
+            "Link": "https://www.google.com",
+            "Technologies": [
+                {
+                    "Name": "Nuxt",
+                    "Icon": "devicon:nuxtjs"
+                },
+                {
+                    "Name": "TypeScript",
+                    "Icon": "devicon:typescript"
+                },
+                {
+                    "Name": "TailwindCSS",
+                    "Icon": "devicon:tailwindcss"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2021"
+        },
+        {
+            "Title": "Project 2",
+            "Description": "Description 2",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "React",
+                    "Icon": "devicon:react"
+                },
+                {
+                    "Name": "JavaScript",
+                    "Icon": "devicon:javascript"
+                },
+                {
+                    "Name": "CSS",
+                    "Icon": "devicon:css3"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2022"
+        },
+        {
+            "Title": "Project 3",
+            "Description": "Description 3",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Angular",
+                    "Icon": "devicon:angular"
+                },
+                {
+                    "Name": "TypeScript",
+                    "Icon": "devicon:typescript"
+                },
+                {
+                    "Name": "SCSS",
+                    "Icon": "devicon:sass"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2023"
+        },
+        {
+            "Title": "Project 4",
+            "Description": "Description 4",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Vue.js",
+                    "Icon": "devicon:vuejs"
+                },
+                {
+                    "Name": "JavaScript",
+                    "Icon": "devicon:javascript"
+                },
+                {
+                    "Name": "Vuetify",
+                    "Icon": "devicon:vuetify"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2024"
+        },
+        {
+            "Title": "Project 5",
+            "Description": "Description 5",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Express.js",
+                    "Icon": "devicon:express"
+                },
+                {
+                    "Name": "Node.js",
+                    "Icon": "devicon:nodejs"
+                },
+                {
+                    "Name": "MongoDB",
+                    "Icon": "devicon:mongodb"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2025"
+        },
+        {
+            "Title": "Project 6",
+            "Description": "Description 6",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Laravel",
+                    "Icon": "devicon:laravel"
+                },
+                {
+                    "Name": "PHP",
+                    "Icon": "devicon:php"
+                },
+                {
+                    "Name": "MySQL",
+                    "Icon": "devicon:mysql"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2026"
+        }
+    ]
+}

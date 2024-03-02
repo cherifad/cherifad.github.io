@@ -1,0 +1,21 @@
+{
+    "SectionEducationList": [
+        {
+            "Title": "2ème année de BUT (Bachelor Universitaire de Technologie)",
+            "Year": "2021-2022",
+            "Place": "IUT Annecy, Haute-Savoie, France",
+            "KeysInformations": [
+                "Informatique",
+                "Parcours réalisation d'applications : conception, développement, validation"
+            ]
+        },
+        {
+            "Title": "Apprenti Ingénieur Informatique",
+            "Year": "Depuis 2023",
+            "Place": "CPE Lyon, Rhône, France",
+            "KeysInformations": [
+                "Filière IRC : Informatique et réseau de communication"
+            ]
+        }
+    ]
+}

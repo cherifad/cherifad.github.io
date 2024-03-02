@@ -13,7 +13,7 @@
         <div class="bg-[#373737] rounded-3xl mt-2 p-12 md:text-4xl text-2xl font-bold text-white uppercase">
             {{ title }}
             <ul v-for="(keyInfo, index) in keysInformations" :key="index" class="text-[#969696] md:text-2xl text-lg font-light mt-2">
-                <li>
+                <li class="flex items-center gap-2">
                     <Icon class="text-2xl" name="material-symbols-light:arrow-right-alt-rounded" />
                     {{ keyInfo }}
                 </li>
@@ -30,3 +30,9 @@ defineProps({
     keysInformations: Array<String>
 })
 </script>
+
+<style scoped>
+span {
+    transition: all 0.3s;
+}
+</style>

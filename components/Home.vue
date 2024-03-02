@@ -15,8 +15,12 @@
                 {{ $t('Home.Content') }}
             </p>
             <div class="flex flex-col sm:flex-row gap-2 justify-evenly mb-6">
-                <Button class="text-center lg:text-start w-full lg:w-fit" :text="$t('Home.Button.Contact')" isBlack icon="mdi:arrow-top-right" transition="top-right" />
-                <Button class="text-center lg:text-start w-full lg:w-fit" :text="$t('Home.Button.Resume')" isBlack icon="mdi:download" transition="bottom" />
+                <a href="#contact" class="text-center lg:text-start w-full lg:w-fit">
+                    <Button class="w-full" :text="$t('Home.Button.Contact')" isBlack icon="mdi:arrow-top-right" transition="top-right" />
+                </a>
+                <a :href="$t('CV.Path')" target="_blank" class="text-center lg:text-start w-full lg:w-fit">
+                    <Button class="w-full" :text="$t('Home.Button.Resume')" isBlack icon="mdi:download" transition="bottom" />
+                </a>
             </div> 
             <div class="flex">
                 <a href="https://github.com/cherifad" target="_blank" class="mr-4">

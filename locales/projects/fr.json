@@ -1,0 +1,126 @@
+{
+    "SectionProjetsList": [
+        {
+            "Title": "Crous'tillant",
+            "Description": "Un bot discord pour donner les menus du restaurant universitaire d'Annecy. Les données proviennent du site du restaurant.",
+            "Link": "https://github.com/cherifad/Crous-tillant",
+            "Technologies": [
+                {
+                    "Name": "Python",
+                    "Icon": "devicon:python"
+                },
+                {
+                    "Name": "Discord",
+                    "Icon": "skill-icons:discord"
+                }
+            ],
+            "Image": "/img/project-img/single_message.png",
+            "Year": "2021"
+        },
+        {
+            "Title": "Projet 2",
+            "Description": "Description 2",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "React",
+                    "Icon": "devicon:react"
+                },
+                {
+                    "Name": "JavaScript",
+                    "Icon": "devicon:javascript"
+                },
+                {
+                    "Name": "CSS",
+                    "Icon": "devicon:css3"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2022"
+        },
+        {
+            "Title": "Projet 3",
+            "Description": "Description 3",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Angular",
+                    "Icon": "devicon:angular"
+                },
+                {
+                    "Name": "TypeScript",
+                    "Icon": "devicon:typescript"
+                },
+                {
+                    "Name": "SCSS",
+                    "Icon": "devicon:sass"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2023"
+        },
+        {
+            "Title": "Projet 4",
+            "Description": "Description 4",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Vue.js",
+                    "Icon": "devicon:vuejs"
+                },
+                {
+                    "Name": "JavaScript",
+                    "Icon": "devicon:javascript"
+                },
+                {
+                    "Name": "Vuetify",
+                    "Icon": "devicon:vuetify"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2024"
+        },
+        {
+            "Title": "Projet 5",
+            "Description": "Description 5",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Express.js",
+                    "Icon": "devicon:express"
+                },
+                {
+                    "Name": "Node.js",
+                    "Icon": "devicon:nodejs"
+                },
+                {
+                    "Name": "MongoDB",
+                    "Icon": "devicon:mongodb"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2025"
+        },
+        {
+            "Title": "Projet 6",
+            "Description": "Description 6",
+            "Link": "https://www.example.com",
+            "Technologies": [
+                {
+                    "Name": "Laravel",
+                    "Icon": "devicon:laravel"
+                },
+                {
+                    "Name": "PHP",
+                    "Icon": "devicon:php"
+                },
+                {
+                    "Name": "MySQL",
+                    "Icon": "devicon:mysql"
+                }
+            ],
+            "Image": "https://via.placeholder.com/150",
+            "Year": "2026"
+        }
+    ]
+}
