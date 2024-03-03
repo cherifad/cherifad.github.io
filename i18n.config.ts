@@ -7,9 +7,20 @@ import projectFr from "./locales/projects/fr.json";
 import projectEn from "./locales/projects/en.json";
 
 export default defineI18nConfig(() => ({
-  locales: ["en", "fr"],
+  locales: [
+    {
+      code: "en",
+      iso: "en-US",
+    },
+    {
+      code: "fr",
+      iso: "fr-FR",
+    },
+  ],
+  baseUrl: "http://localhost:3000",
   locale: "fr",
   strategy: "prefix_except_default",
+  prefix: "/:locale/",
   defaultLocale: "fr",
   lazy: true,
   fallbackLocale: "fr",

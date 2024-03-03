@@ -1,5 +1,5 @@
 <template>
-    <button id="btn" :disabled="disabled" :class="{
+    <button :id="`btn-${getRandomString()}`" :disabled="disabled" :aria-label="text" :class="{
         'py-3 px-5 rounded-full text-xl font-light uppercase transition duration-300 ease-in-out flex justify-between items-center gap-2': true,
         'text-white bg-[#1e1e20] border border-[#1e1e20] hover:bg-gray-200 hover:text-[#1e1e20]': isBlack,
         'text-[#1e1e20] bg-gray-200 border border-gray-200 hover:bg-[#1e1e20] hover:text-white': !isBlack,
@@ -7,18 +7,20 @@
     }">
         {{ text }}
         <Icon v-if="icon" :name="icon" :class="{
-            'trans-bot': transition === 'bottom',
-            'trans-top-right': transition === 'top-right',
-            'trans-right': transition === 'right'
-        }" />
+        'trans-bot': transition === 'bottom',
+        'trans-top-right': transition === 'top-right',
+        'trans-right': transition === 'right'
+    }" />
     </button>
 </template>
 
 <script setup lang="ts">
 
-defineProps({
-    text: String,
-    href: String,
+const props = defineProps({
+    text: {
+        type: String,
+        required: true
+    },
     isBlack: Boolean,
     icon: {
         type: String,
@@ -33,6 +35,8 @@ defineProps({
         default: false
     }
 })
+
+const getRandomString = () => Math.random().toString(36).substring(7)
 
 </script>
 

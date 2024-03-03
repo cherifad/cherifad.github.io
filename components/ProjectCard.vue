@@ -1,11 +1,11 @@
 <template>
     <div class="w-full lg:w-1/2 xl:w-1/3 lg:px-4 pb-4 flex">
         <div id="card" class="py-6 px-8 rounded-3xl relative flex-1 flex flex-col justify-between">
-            <img :src="image" alt="project image" class="w-full h-48 object-cover rounded-md mt-3" />
+            <img :src="image" alt="project image" class="w-full object-cover rounded-md mt-3 max-h-96" />
             <span class="text-sm bg-gray-200 px-2 py-1 rounded-md absolute top-10 left-10">{{ year }}</span>
             <div class="flex flex-col gap-3">
                 <div class="flex flex-col gap-2">
-                    <h3 class="text-xl font-normal uppercase">{{ title }}</h3>
+                    <h1 class="text-xl font-normal uppercase">{{ title }}</h1>
                     <p class="text-sm">{{ description }}</p>
                 </div>
                 <div class="flex flex-col gap-2">

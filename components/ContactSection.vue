@@ -14,13 +14,9 @@
             <Icon name="material-symbols-light:robot-2" class="w-8 h-8" />
             {{ $t('Section.Contact.Form.Captcha') }}
           </p>
-          <div class="flex items-center gap-4">
-            <span>{{ captcha.number1 }}</span>
-            <span>{{ captcha.randomMathOperation }}</span>
-            <span>{{ captcha.number2 }}</span>
-            <span>=</span>
-            <Input type="text" :isBlack="true" v-model="form.userResult" />
-          </div>
+          <Input type="text" :placeholder="$t('Section.Contact.Form.Captcha.Placeholder')"
+            :label="$t('Section.Contact.Form.Captcha.Question', { operation: `${captcha.number1} ${captcha.randomMathOperation} ${captcha.number2}` })"
+            :isBlack="true" v-model="form.userResult" />
         </div>
         <Button class="lg:hidden w-full mt-8" :text="$t('Section.Contact.Form.Submit')" :isBlack="false"
           :disabled="buttonDisabled" icon="material-symbols:send-outline" transition="right" />
@@ -44,13 +40,9 @@
               <Icon name="material-symbols-light:robot-2" class="w-8 h-8" />
               {{ $t('Section.Contact.Form.Captcha') }}
             </p>
-            <div class="flex items-center gap-4">
-              <span>{{ captcha.number1 }}</span>
-              <span>{{ captcha.randomMathOperation }}</span>
-              <span>{{ captcha.number2 }}</span>
-              <span>=</span>
-              <Input type="text" :isBlack="true" v-model="form.userResult" />
-            </div>
+            <Input type="text" :placeholder="$t('Section.Contact.Form.Captcha.Placeholder')"
+              :label="$t('Section.Contact.Form.Captcha.Question', { operation: `${captcha.number1} ${captcha.randomMathOperation} ${captcha.number2}` })"
+              :isBlack="true" v-model="form.userResult" />
           </div>
           <Button class="hidden lg:block" :text="$t('Section.Contact.Form.Submit')" :isBlack="false"
             :disabled="buttonDisabled" icon="material-symbols:send-outline" transition="right" />

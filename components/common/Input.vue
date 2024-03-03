@@ -1,8 +1,8 @@
 <template>
     <div>
-        <label :for="idValue" :class="`font-normal mb-4 text-xl ${isBlack ? 'text-[#969696]' : 'text-gray-900'}`">{{ label
+        <label :for="label" :class="`font-normal mb-4 text-xl ${isBlack ? 'text-[#969696]' : 'text-gray-900'}`">{{ label
         }}</label>
-        <textarea :id="idValue" :placeholder="placeholder" v-if="type === 'textarea'" :rows="rows"
+        <textarea :id="label" :placeholder="placeholder" v-if="type === 'textarea'" :rows="rows"
             :class="`py-3 w-full px-5 rounded-xl text-xl font-normal transition duration-300 outline-none ease-in-out flex justify-between items-center bg-transparent gap-2 ${isBlack ? 'text-[#969696] border border-[#969696]' : 'text-gray-900 bg-gray-200 border border-gray-200 hover:bg-gray-900 hover:text-white'}` + customClass"
             @input="(e: any) => updateValue(e.target.value)" />
         <input :id="idValue" :type="type" :placeholder="placeholder" v-else
@@ -46,7 +46,6 @@ const props = defineProps({
     }
 });
 
-const inputValue = ref(props.value);
 const idValue = ref(props.id);
 
 const emit = defineEmits(['update:modelValue'])
