@@ -26,7 +26,7 @@ The portfolio website is built using the following technologies:
 - [Tailwind CSS](https://tailwindcss.com/)
 - HTML5
 - CSS3
-- JavaScript
+- TypeScript
 
 ## Features
 
