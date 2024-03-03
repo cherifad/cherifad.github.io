@@ -2,14 +2,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   imports: {
-    dirs: ['types'],
+    dirs: ["types"],
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", 'nuxt-icon'],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "nuxt-icon"],
   tailwindcss: {
     exposeConfig: true,
   },
   i18n: {
-    vueI18n: './i18n.config.ts'
+    vueI18n: "./i18n.config.ts",
   },
   css: ["~/assets/css/style.css"],
+  ssr: false,
 });
