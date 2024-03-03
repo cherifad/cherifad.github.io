@@ -13,4 +13,10 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/style.css"],
   ssr: false,
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
 });
