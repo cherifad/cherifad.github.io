@@ -9,7 +9,7 @@
                     <p class="text-sm">{{ description }}</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <div class="flex items-center gap-2">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
                         <p class="text-sm underline">{{ $t('Section.Projects.Single.Details.Technologies') }}{{
                             $t('Ponctuation.Space') }}:</p>
                         <div class="flex flex-row gap-2 flex-wrap items-center">
