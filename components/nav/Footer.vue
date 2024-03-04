@@ -4,7 +4,8 @@
             <div class="flex-1 hidden lg:block">Adlen CHERIF</div>
             <div class="flex flex-col gap-4 items-center">
                 <p class="flex flex-wrap justify-center">
-                    Design{{ $t('Ponctuation.Space') }}: &nbsp;<a href="https://dribbble.com/Adhiari_is" target="_blank" class="flex items-center">Adhiari
+                    Design{{ $t('Ponctuation.Space') }}: &nbsp;<a href="https://dribbble.com/Adhiari_is" target="_blank"
+                        class="flex items-center">Adhiari
                         Subekti
                         <Icon class="text-xl" name="material-symbols:open-in-new" />
                     </a>&nbsp; via &nbsp;<a
@@ -14,8 +15,8 @@
                     </a>
                 </p>
                 <p class="flex">
-                    {{ $t('Footer.Credits.Icons') }}{{ $t('Ponctuation.Space') }}: &nbsp; <a href="https://nuxt.com/modules/icon" target="_blank"
-                        class="flex items-center">
+                    {{ $t('Footer.Credits.Icons') }}{{ $t('Ponctuation.Space') }}: &nbsp; <a
+                        href="https://nuxt.com/modules/icon" target="_blank" class="flex items-center">
                         Nuxt Icon
                         <Icon class="text-xl" name="material-symbols:open-in-new" />
                     </a>
@@ -27,6 +28,10 @@
                         <Icon class="text-xl" name="material-symbols:open-in-new" />
                     </a>
                 </p>
+                <a :href="$t('Footer.Button.ReportIssue.Url')" target="_blank" class="mt-3 w-fit">
+                    <Button class="mt-3 w-fit" :text="$t('Footer.Button.ReportIssue')" icon="ic:round-bug-report"
+                        transition="top-right" />
+                </a>
             </div>
             <div class="font-normal flex-1 items-center mt-3 lg:mt-0 flex flex-col lg:items-end gap-3">
                 <p>{{ currentYear }} | made with ❤️ by me</p>
@@ -37,5 +42,6 @@
 </template>
 
 <script setup lang="ts">
+import Button from '@/components/common/Button.vue';
 const currentYear = new Date().getFullYear()
 </script>

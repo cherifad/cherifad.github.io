@@ -19,7 +19,7 @@
         },
         {
             "Title": "Navidrome Tools",
-            "Description": "Some useful tools for Navidrome, such as a playlust synchronizer with Spotify",
+            "Description": "Some useful tools for Navidrome, such as a playlist synchronizer with Spotify",
             "Link": "https://github.com/cherifad/Navidrome-Tools",
             "Technologies": [
                 {

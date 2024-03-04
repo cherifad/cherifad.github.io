@@ -26,11 +26,11 @@
           <div class="flex flex-col gap-4 text-[#969696] text-2xl">
             <div class="flex items-center gap-8 border-b-2 border-[#555555] pb-4 w-full">
               <Icon name="material-symbols:call" />
-              <span><a href="mailto:a.fr@gmx.com">+33 6 XX XX XX XX</a></span>
+              <span><a href="mailto:adlen.cherif@cpe.fr">+33 6 XX XX XX XX</a></span>
             </div>
             <div class="flex items-center gap-8 border-b-2 border-[#555555] pb-4 w-full">
               <Icon name="material-symbols-light:alternate-email" />
-              <span><a href="mailto:a.fr@gmx.com" target="_blank">adlen.cherif@cpe.fr</a></span>
+              <span><a href="mailto:adlen.cherif@cpe.fr" target="_blank">adlen.cherif@cpe.fr</a></span>
             </div>
           </div>
         </div>

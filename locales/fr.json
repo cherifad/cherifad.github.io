@@ -3,7 +3,7 @@
   "CV.Path": "/cv/Adlen_CHERIF_CV_FR.pdf",
   "Header.Menu.About": "À propos",
   "Header.Menu.Projects": "Projets",
-  "Header.Menu.Skills": "Compétences",
+  "Header.Menu.School": "Parcours académique",
   "Header.Menu.Contact": "Contactez-moi",
   "Home.Content": "Ingénieur étudiant à CPE Lyon en informatique et réseaux de communication (apprentissage). Je suis passionné par le développement web, le développement en C#, l'automatisation avec Python, ainsi que l'utilisation de l'Arduino pour des projets électroniques créatifs. En parallèle de mes études, je consacre également du temps à ma passion pour les films et les séries. Je suis constamment à la recherche de nouvelles façons d'intégrer mes compétences techniques dans des projets innovants et divertissants.",
   "Home.Button.Contact": "Contactez-moi",
@@ -34,6 +34,8 @@
   "Section.Projects.More": "Voir plus sur GitHub",
   "Footer.Credits.Icons": "Icones de",
   "Footer.Credits.Sources": "Sources",
+  "Footer.Button.ReportIssue": "Signaler un problème",
+  "Footer.Button.ReportIssue.Url": "https://github.com/cherifad/cherifad.github.io/issues/new?title=Huston%2C+on+a+un+probl%C3%A8me&body=J%27ai+un+probl%C3%A8me+avec+le+site+et+voici+ce+que+c%27est%3A",
   "LanguageSelector.Button.AriaLabel.English": "Changer la langue pour l'anglais",
   "LanguageSelector.Button.AriaLabel.French": "Changer la langue pour le français"
 }
