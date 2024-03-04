@@ -36,24 +36,24 @@ const props = defineProps({
     }
 })
 
-const getRandomString = () => Math.random().toString(36).substring(7)
+const getRandomString = () => Math.random().toString(36).substring(7);
 
 </script>
 
 <style scoped>
-#btn svg {
+button svg {
     transition: all 0.3s ease-in-out;
 }
 
-#btn:hover .trans-top-right {
+button:hover .trans-top-right {
     transform: translate3d(0.2rem, -.1rem, 0);
 }
 
-#btn:hover .trans-bot {
+button:hover .trans-bot {
     transform: translate3d(0, .2rem, 0);
 }
 
-#btn:hover .trans-right {
+button:hover .trans-right {
     transform: translate3d(.2rem, 0, 0);
 }
 </style>
