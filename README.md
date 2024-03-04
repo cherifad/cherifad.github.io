@@ -1,75 +1,60 @@
-# Nuxt 3 Minimal Starter
+# Portfolio Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Deploy to GitHub Pages](https://github.com/cherifad/cherifad.github.io/actions/workflows/nuxtjs.yml/badge.svg)](https://github.com/cherifad/cherifad.github.io/actions/workflows/nuxtjs.yml)
 
-## Setup
+Welcome to the repository for my portfolio website! This website showcases my skills, projects, and experiences as a computer engineering student. Feel free to explore and learn more about me.
 
-Make sure to install the dependencies:
+## Table of Contents
 
-```bash
-# npm
-npm install
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-# pnpm
-pnpm install
+## Introduction
 
-# yarn
-yarn install
+This website serves as my digital portfolio, where I present my background, skills, and projects. It provides an overview of my journey in the field of computer engineering and showcases the projects I have worked on.
 
-# bun
-bun install
-```
+## Technologies Used
 
-## Development Server
+The portfolio website is built using the following technologies:
 
-Start the development server on `http://localhost:3000`:
+- [Nuxt.js 3](https://nuxtjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- HTML5
+- CSS3
+- TypeScript
 
-```bash
-# npm
-npm run dev
+## Features
 
-# pnpm
-pnpm run dev
+- Responsive design for optimal viewing on various devices.
+- Sections for showcasing skills, projects, experiences, and contact information.
+- Interactive elements to engage visitors.
+- Easy navigation with smooth scrolling and a clean layout.
 
-# yarn
-yarn dev
+## Installation
 
-# bun
-bun run dev
-```
+To run the website locally, follow these steps:
 
-## Production
+1. Clone this repository to your local machine using `git clone`.
+2. Navigate to the project directory.
+3. Install dependencies using `yarn`.
+4. Run the development server using `yarn run dev`.
+5. Open your web browser and go to `http://localhost:3000`.
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
+## Usage
 
-# pnpm
-pnpm run build
+Feel free to explore the website to learn more about my skills and projects. You can navigate through different sections using the menu or scrolling down. If you have any questions or feedback, you can contact me using the provided contact information.
 
-# yarn
-yarn build
+## Contributing
 
-# bun
-bun run build
-```
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request. Let's make this portfolio website even better together.
 
-Locally preview production build:
+## License
 
-```bash
-# npm
-npm run preview
+This project is licensed under the [MIT License](LICENSE).
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
