@@ -10,7 +10,7 @@
                 </div>
                 <div class="flex flex-col gap-2">
                     <div class="flex flex-col sm:flex-row sm:items-center gap-2">
-                        <p class="text-sm underline">{{ $t('Section.Projects.Single.Details.Technologies') }}{{
+                        <p class="text-sm underline text-nowrap">{{ $t('Section.Projects.Single.Details.Technologies') }}{{
                             $t('Ponctuation.Space') }}:</p>
                         <div class="flex flex-row gap-2 flex-wrap items-center">
                             <span v-for="(technology, index) in technologies" :key="index"
