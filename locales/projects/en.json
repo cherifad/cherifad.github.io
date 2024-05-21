@@ -1,174 +1,174 @@
 {
-    "SectionProjectsList": [
+  "SectionProjectsList": [
+    {
+      "Title": "Crous'tillant",
+      "Description": "A website to display the menus of the university restaurants and cafeterias of France's Crous. The data comes from the restaurant websites.",
+      "Link": "https://ru.servperso.me",
+      "Technologies": [
         {
-            "Title": "Crous'tillant",
-            "Description": "A website to display the menus of the university restaurants and cafeterias of France's Crous. The data comes from the restaurant websites.",
-            "Link": "https://github.com/cherifad/Crous-tillant",
-            "Technologies": [
-                {
-                    "Name": "Python",
-                    "Icon": "devicon:python"
-                },
-                {
-                    "Name": "NextJs",
-                    "Icon": "devicon:nextjs-wordmark"
-                },
-                {
-                    "Name": "TailwindCSS",
-                    "Icon": "devicon:tailwindcss"
-                },
-                {
-                    "Name": "TypeScript",
-                    "Icon": "devicon:typescript"
-                },
-                {
-                    "Name": "Prisma",
-                    "Icon": "devicon:prisma"
-                },
-                {
-                    "Name": "PostgreSQL",
-                    "Icon": "devicon:postgresql"
-                }
-            ],
-            "Image": "/img/project-img/crousstillant.png",
-            "Year": "2024"
+          "Name": "Python",
+          "Icon": "devicon:python"
         },
         {
-            "Title": "Navidrome Tools",
-            "Description": "Some useful tools for Navidrome, such as a playlist synchronizer with Spotify",
-            "Link": "https://github.com/cherifad/Navidrome-Tools",
-            "Technologies": [
-                {
-                    "Name": "Python",
-                    "Icon": "devicon:python"
-                },
-                {
-                    "Name": "SQL Lite",
-                    "Icon": "file-icons:sqlite"
-                }
-            ],
-            "Image": "https://picsum.photos/seed/picsum/500/500",
-            "Year": "2023"
+          "Name": "NextJs",
+          "Icon": "devicon:nextjs-wordmark"
         },
         {
-            "Title": "Vinodrill",
-            "Description": "Year 2 BUT Computer Science pedagogical project. The aim was to recreate a website based on the original (vinotrip.fr) using the technologies seen in class. The site is a booking agent for wine tours.",
-            "Link": "https://github.com/cherifad/Vinodrill_Back",
-            "Technologies": [
-                {
-                    "Name": "C# (2nd api version)",
-                    "Icon": "devicon:csharp"
-                },
-                {
-                    "Name": "PHP",
-                    "Icon": "devicon:php"
-                },
-                {
-                    "Name": "PostgreSQL",
-                    "Icon": "devicon:postgresql"
-                },
-                {
-                    "Name": "VueJs",
-                    "Icon": "devicon:vuejs"
-                },
-                {
-                    "Name": "TailwindCSS",
-                    "Icon": "devicon:tailwindcss"
-                },
-                {
-                    "Name": "Laravel (1st api version)",
-                    "Icon": "devicon:laravel"
-                },
-                {
-                    "Name": "Python (to generate some data)",
-                    "Icon": "devicon:python"
-                }
-            ],
-            "Image": "/img/project-img/vinodrill.png",
-            "Year": "2022-2023"
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
         },
         {
-            "Title": "This website",
-            "Description": "My portfolio. It is based on a website template that I found on Dribbble (link in the footer). I decided to use it for my portfolio because I found it very pretty.",
-            "Link": "#",
-            "Technologies": [
-                {
-                    "Name": "Nuxt.js",
-                    "Icon": "devicon:nuxtjs"
-                },
-                {
-                    "Name": "TailwindCSS",
-                    "Icon": "devicon:tailwindcss"
-                },
-                {
-                    "Name": "TypeScript",
-                    "Icon": "devicon:typescript"
-                }
-            ],
-            "Image": "/img/project-img/portfoliov2-EN.png",
-            "Year": "2024"
+          "Name": "TypeScript",
+          "Icon": "devicon:typescript"
         },
         {
-            "Title": "Portfolio",
-            "Description": "My old portfolio website",
-            "Link": "https://cherifad.github.io/old/",
-            "Technologies": [
-                {
-                    "Name": "HTML",
-                    "Icon": "devicon:html5"
-                },
-                {
-                    "Name": "CSS",
-                    "Icon": "devicon:css3"
-                },
-                {
-                    "Name": "JavaScript",
-                    "Icon": "devicon:javascript"
-                }
-            ],
-            "Image": "/img/project-img/portfolioOld.png",
-            "Year": "2025"
+          "Name": "Prisma",
+          "Icon": "devicon:prisma"
         },
         {
-            "Title": "Smart EV",
-            "Description": "A website to calculate an electric car route. The site uses the MapBox API to calculate the raw route and then a homemade API to place charging points on the route.",
-            "Link": "https://github.com/cpe-lyon/projet-smart-ev-altinel-cherif",
-            "Technologies": [
-                {
-                    "Name": "Next.js",
-                    "Icon": "devicon:nextjs"
-                },
-                {
-                    "Name": "React",
-                    "Icon": "devicon:react"
-                },
-                {
-                    "Name": "TailwindCSS",
-                    "Icon": "devicon:tailwindcss"
-                },
-                {
-                    "Name": "TypeScript",
-                    "Icon": "devicon:typescript"
-                },
-                {
-                    "Name": "Prisma",
-                    "Icon": "devicon:prisma"
-                },
-                {
-                    "Name": "SQL Lite",
-                    "Icon": "file-icons:sqlite"
-                },
-                {
-                    "Name": "MapBox",
-                    "Icon": "simple-icons:mapbox"
-                },
-                {
-                    "Name": "OpenStreetMap",
-                    "Icon": "simple-icons:openstreetmap"
-                }
-            ],
-            "Image": "/img/project-img/smartEV.png",
-            "Year": "2024"
+          "Name": "PostgreSQL",
+          "Icon": "devicon:postgresql"
         }
-    ]
+      ],
+      "Image": "/img/project-img/crousstillant.png",
+      "Year": "2024"
+    },
+    {
+      "Title": "Navidrome Tools",
+      "Description": "Some useful tools for Navidrome, such as a playlist synchronizer with Spotify",
+      "Link": "https://github.com/cherifad/Navidrome-Tools",
+      "Technologies": [
+        {
+          "Name": "Python",
+          "Icon": "devicon:python"
+        },
+        {
+          "Name": "SQL Lite",
+          "Icon": "file-icons:sqlite"
+        }
+      ],
+      "Image": "https://picsum.photos/seed/picsum/500/500",
+      "Year": "2023"
+    },
+    {
+      "Title": "Vinodrill",
+      "Description": "Year 2 BUT Computer Science pedagogical project. The aim was to recreate a website based on the original (vinotrip.fr) using the technologies seen in class. The site is a booking agent for wine tours.",
+      "Link": "https://github.com/cherifad/Vinodrill_Back",
+      "Technologies": [
+        {
+          "Name": "C# (2nd api version)",
+          "Icon": "devicon:csharp"
+        },
+        {
+          "Name": "PHP",
+          "Icon": "devicon:php"
+        },
+        {
+          "Name": "PostgreSQL",
+          "Icon": "devicon:postgresql"
+        },
+        {
+          "Name": "VueJs",
+          "Icon": "devicon:vuejs"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "Laravel (1st api version)",
+          "Icon": "devicon:laravel"
+        },
+        {
+          "Name": "Python (to generate some data)",
+          "Icon": "devicon:python"
+        }
+      ],
+      "Image": "/img/project-img/vinodrill.png",
+      "Year": "2022-2023"
+    },
+    {
+      "Title": "This website",
+      "Description": "My portfolio. It is based on a website template that I found on Dribbble (link in the footer). I decided to use it for my portfolio because I found it very pretty.",
+      "Link": "#",
+      "Technologies": [
+        {
+          "Name": "Nuxt.js",
+          "Icon": "devicon:nuxtjs"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "TypeScript",
+          "Icon": "devicon:typescript"
+        }
+      ],
+      "Image": "/img/project-img/portfoliov2-EN.png",
+      "Year": "2024"
+    },
+    {
+      "Title": "Portfolio",
+      "Description": "My old portfolio website",
+      "Link": "https://cherifad.github.io/old/",
+      "Technologies": [
+        {
+          "Name": "HTML",
+          "Icon": "devicon:html5"
+        },
+        {
+          "Name": "CSS",
+          "Icon": "devicon:css3"
+        },
+        {
+          "Name": "JavaScript",
+          "Icon": "devicon:javascript"
+        }
+      ],
+      "Image": "/img/project-img/portfolioOld.png",
+      "Year": "2025"
+    },
+    {
+      "Title": "Smart EV",
+      "Description": "A website to calculate an electric car route. The site uses the MapBox API to calculate the raw route and then a homemade API to place charging points on the route.",
+      "Link": "https://github.com/cpe-lyon/projet-smart-ev-altinel-cherif",
+      "Technologies": [
+        {
+          "Name": "Next.js",
+          "Icon": "devicon:nextjs"
+        },
+        {
+          "Name": "React",
+          "Icon": "devicon:react"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "TypeScript",
+          "Icon": "devicon:typescript"
+        },
+        {
+          "Name": "Prisma",
+          "Icon": "devicon:prisma"
+        },
+        {
+          "Name": "SQL Lite",
+          "Icon": "file-icons:sqlite"
+        },
+        {
+          "Name": "MapBox",
+          "Icon": "simple-icons:mapbox"
+        },
+        {
+          "Name": "OpenStreetMap",
+          "Icon": "simple-icons:openstreetmap"
+        }
+      ],
+      "Image": "/img/project-img/smartEV.png",
+      "Year": "2024"
+    }
+  ]
 }
