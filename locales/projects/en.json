@@ -2,7 +2,7 @@
     "SectionProjectsList": [
         {
             "Title": "Crous'tillant",
-            "Description": "A bot discord to give the menus of Annecy's university restaurant. The data comes from the restaurant's website.",
+            "Description": "A website to display the menus of the university restaurants and cafeterias of France's Crous. The data comes from the restaurant websites.",
             "Link": "https://github.com/cherifad/Crous-tillant",
             "Technologies": [
                 {
@@ -10,12 +10,28 @@
                     "Icon": "devicon:python"
                 },
                 {
-                    "Name": "Discord",
-                    "Icon": "skill-icons:discord"
+                    "Name": "NextJs",
+                    "Icon": "devicon:nextjs-wordmark"
+                },
+                {
+                    "Name": "TailwindCSS",
+                    "Icon": "devicon:tailwindcss"
+                },
+                {
+                    "Name": "TypeScript",
+                    "Icon": "devicon:typescript"
+                },
+                {
+                    "Name": "Prisma",
+                    "Icon": "devicon:prisma"
+                },
+                {
+                    "Name": "PostgreSQL",
+                    "Icon": "devicon:postgresql"
                 }
             ],
             "Image": "/img/project-img/crousstillant.png",
-            "Year": "2021"
+            "Year": "2024"
         },
         {
             "Title": "Navidrome Tools",
