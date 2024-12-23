@@ -3,7 +3,7 @@
     {
       "Title": "Crous'tillant",
       "Description": "A website to display the menus of the university restaurants and cafeterias of France's Crous. The data comes from the restaurant websites.",
-      "Link": "https://ru.servperso.me",
+      "Link": "https://croustillant.vercel.app",
       "Technologies": [
         {
           "Name": "Python",
