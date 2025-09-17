@@ -1,10 +1,10 @@
 /** ./i18n/i18n.config.ts */
-import fr from "./locales/fr.json";
-import en from "./locales/en.json";
-import eduFr from "./locales/education/fr.json";
-import eduEn from "./locales/education/en.json";
-import projectFr from "./locales/projects/fr.json";
-import projectEn from "./locales/projects/en.json";
+import fr from "../locales/fr.json";
+import en from "../locales/en.json";
+import eduFr from "../locales/education/fr.json";
+import eduEn from "../locales/education/en.json";
+import projectFr from "../locales/projects/fr.json";
+import projectEn from "../locales/projects/en.json";
 
 export default defineI18nConfig(() => ({
   locales: [
@@ -27,5 +27,8 @@ export default defineI18nConfig(() => ({
   messages: {
     en: { ...en, ...eduEn, ...projectEn },
     fr: { ...fr, ...eduFr, ...projectFr },
+  },
+  bundle: {
+    optimizeTranslationDirective: false,
   },
 }));
