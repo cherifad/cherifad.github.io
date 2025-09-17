@@ -10,7 +10,7 @@
                 </span>
             </div>
         </div>
-        <div class="text-2xl lg:w-5/12">
+        <div class="md:text-2xl lg:w-5/12">
             <p class="font-light mb-6">
                 {{ $t('Home.Content') }}
             </p>
@@ -22,14 +22,14 @@
                     <Button class="w-full" :text="$t('Home.Button.Resume')" isBlack icon="mdi:download" transition="bottom" />
                 </a>
             </div> 
-            <div class="flex">
+            <!-- <div class="flex">
                 <a href="https://github.com/cherifad" target="_blank" class="mr-4" :aria-label="$t('Home.Link.Icon.Github.AriaLabel')">
                     <Icon class="text-5xl" name="mdi:github" />
                 </a>
                 <a href="https://www.linkedin.com/in/adlen-cherif" target="_blank" :aria-label="$t('Home.Link.Icon.Linkedin.AriaLabel')">
                     <Icon class="text-5xl" name="mdi:linkedin" />
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
