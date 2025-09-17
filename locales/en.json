@@ -5,7 +5,7 @@
     "Header.Menu.Projects": "Projects",
     "Header.Menu.School": "Education",
     "Header.Menu.Contact": "Contact Me",
-    "Home.Content": "Computer Science and Communication Networks engineering student at CPE Lyon (apprenticeship), currently seeking an international internship for Summer 2025 (Starting by the 15th of june). I am passionate about web development, C# programming, automation with Python, and using Arduino for creative electronic projects. Outside of my studies, I dedicate time to my love for films and series. I am always looking for new ways to apply my technical skills to innovative and engaging projects.",
+    "Home.Content": "Engineering student at CPE Lyon, specializing in computer science and communication networks (work-study program). I focus on software development and modern web technologies, with a strong passion for front-end engineering (Next.js 14, React, Tailwind, shadcn/ui) and experience in C# and Python. I am the main web UI developer of CROUStillant, an open-source project that provides real-time CROUS university restaurant menus, already used by students across France.",
     "Home.Button.Contact": "Contact Me",
     "Home.Button.Resume": "View Resume",
     "Home.Link.Icon.Linkedin.AriaLabel": "Click to view my LinkedIn profile",

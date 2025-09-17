@@ -5,7 +5,7 @@
   "Header.Menu.Projects": "Projets",
   "Header.Menu.School": "Parcours académique",
   "Header.Menu.Contact": "Contactez-moi",
-  "Home.Content": "Ingénieur étudiant à CPE Lyon en informatique et réseaux de communication (apprentissage), actuellement en recherche d'un stage à l'étranger pour l'été 2025. Je suis passionné par le développement web, le développement en C#, l'automatisation avec Python, ainsi que l'utilisation de l'Arduino pour des projets électroniques créatifs. En parallèle de mes études, je consacre également du temps à ma passion pour les films et les séries. Je suis constamment à la recherche de nouvelles façons d'intégrer mes compétences techniques dans des projets innovants et divertissants.",
+  "Home.Content": "Étudiant ingénieur à CPE Lyon en informatique et réseaux de communication (apprentissage), je me spécialise dans le développement logiciel et les technologies web modernes. Passionné par le front-end (Next.js 14, React, Tailwind, shadcn/ui) et expérimenté en C# ainsi qu’en Python, j’ai mené à bien plusieurs projets concrets, dont CROUStillant, une application open-source qui agrège en temps réel les menus des restaurants universitaires CROUS et qui est déjà utilisée par des étudiants en France.",
   "Home.Button.Contact": "Contactez-moi",
   "Home.Link.Icon.Github.AriaLabel": "Cliquez ici pour voir mon profil GitHub",
   "Home.Link.Icon.Linkedin.AriaLabel": "Cliquez ici pour voir mon profil LinkedIn",
