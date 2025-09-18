@@ -1,7 +1,8 @@
 <template>
     <div class="w-full lg:w-1/2 xl:w-1/3 lg:px-4 pb-4 flex">
         <div id="card" class="py-6 px-8 rounded-3xl relative flex-1 flex flex-col justify-between">
-            <img :src="image" alt="project image" class="w-full object-cover rounded-md mt-3 max-h-96" />
+            <img :src="`/img/project-img/${slug}/${image}`" alt="project image"
+                class="w-full object-cover rounded-md mt-3 max-h-96" />
             <span class="text-sm bg-gray-200 px-2 py-1 rounded-md absolute top-10 left-10">{{ year }}</span>
             <div class="flex flex-col gap-3">
                 <div class="flex flex-col gap-2">
@@ -10,8 +11,9 @@
                 </div>
                 <div class="flex flex-col gap-2">
                     <div class="flex flex-col sm:flex-row sm:items-center gap-2">
-                        <p class="text-sm underline text-nowrap">{{ $t('Section.Projects.Single.Details.Technologies') }}{{
-                            $t('Ponctuation.Space') }}:</p>
+                        <p class="text-sm underline text-nowrap">{{ $t('Section.Projects.Single.Details.Technologies')
+                            }}{{
+                                $t('Ponctuation.Space') }}:</p>
                         <div class="flex flex-row gap-2 flex-wrap items-center">
                             <span v-for="(technology, index) in technologies" :key="index"
                                 class="text-sm bg-gray-200 px-2 py-1 rounded-md flex items-center gap-1 hover:bg-gray-300">
@@ -22,10 +24,10 @@
                     </div>
                 </div>
             </div>
-            <a :href="link" target="_blank">
+            <NuxtLink :to="`/projects/${slug}`">
                 <Button class="mt-3 w-full" :text="$t('Section.Projects.Single.Details.SeeMore')" isBlack
                     icon="material-symbols:open-in-new" transition="top-right" />
-            </a>
+            </NuxtLink>
         </div>
     </div>
 </template>
@@ -42,7 +44,8 @@ defineProps({
         required: true
     },
     image: String,
-    year: String
+    year: String,
+    slug: String
 })
 </script>
 

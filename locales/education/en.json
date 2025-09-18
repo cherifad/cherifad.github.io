@@ -1,21 +1,33 @@
 {
-    "SectionEducationList": [
-        {
-            "Title": "Two-thirds Completion of Bachelor's Degree in Computer Science",
-            "Year": "2021-2022",
-            "Place": "IUT Annecy, Haute-Savoie, France",
-            "KeysInformations": [
-                "Computer Science",
-                "Course: application development, design and validation"
-            ]
-        },
-        {
-            "Title": "Computer Engineering Apprentice",
-            "Year": "Since 2023",
-            "Place": "CPE LYON 🚀, Rhône, France",
-            "KeysInformations": [
-                "IT & Communication Networks"
-            ]
-        }
-    ]
+  "SectionEducationList": [
+    {
+      "Title": "Two-thirds Completion of Bachelor's Degree in Computer Science",
+      "Year": "2021-2022",
+      "Place": "IUT Annecy, Haute-Savoie, France",
+      "PlaceUrl": "https://www.univ-smb.fr/iut-annecy/",
+      "KeysInformations": [
+        "Computer Science",
+        "Course: application development, design and validation"
+      ]
+    },
+    {
+      "Title": "Engineer Intern",
+      "Year": "2025 (3 months)",
+      "Place": "Universidad Militar Nueva Granada, Bogotá, Colombia",
+      "PlaceUrl": "https://www.umng.edu.co/",
+      "KeysInformations": [
+        "International internship in robotics",
+        "Modeling and simulation of the xArm5 robotic arm",
+        "Development using MATLAB/Simulink and SolidWorks",
+        "Study of forward and inverse kinematics"
+      ]
+    },
+    {
+      "Title": "Computer Engineering Apprentice",
+      "Year": "Since 2023",
+      "Place": "CPE LYON 🚀, Rhône, France",
+      "PlaceUrl": "https://www.cpe.fr/",
+      "KeysInformations": ["IT & Communication Networks"]
+    }
+  ]
 }

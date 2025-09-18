@@ -1,21 +1,35 @@
 {
-    "SectionEducationList": [
-        {
-            "Title": "2ème année de BUT (Bachelor Universitaire de Technologie)",
-            "Year": "2021-2022",
-            "Place": "IUT Annecy, Haute-Savoie, France",
-            "KeysInformations": [
-                "Informatique",
-                "Parcours réalisation d'applications : conception, développement, validation"
-            ]
-        },
-        {
-            "Title": "Apprenti Ingénieur Informatique",
-            "Year": "Depuis 2023",
-            "Place": "CPE Lyon, Rhône, France",
-            "KeysInformations": [
-                "Filière IRC : Informatique et réseau de communication"
-            ]
-        }
-    ]
+  "SectionEducationList": [
+    {
+      "Title": "2ème année de BUT (Bachelor Universitaire de Technologie)",
+      "Year": "2021-2022",
+      "Place": "IUT Annecy, Haute-Savoie, France",
+      "PlaceUrl": "https://www.univ-smb.fr/iut-annecy/",
+      "KeysInformations": [
+        "Informatique",
+        "Parcours réalisation d'applications : conception, développement, validation"
+      ]
+    },
+    {
+      "Title": "Engineer Intern",
+      "Year": "2025 (3 mois)",
+      "Place": "Universidad Militar Nueva Granada, Bogotá, Colombie",
+      "PlaceUrl": "https://www.umng.edu.co/",
+      "KeysInformations": [
+        "Stage international en robotique",
+        "Modélisation et simulation du bras robotique xArm5",
+        "Développement en MATLAB/Simulink et SolidWorks",
+        "Étude de la cinématique directe et inverse"
+      ]
+    },
+    {
+      "Title": "Apprenti Ingénieur Informatique",
+      "Year": "Depuis 2023",
+      "Place": "CPE Lyon, Rhône, France",
+      "PlaceUrl": "https://www.cpe.fr/",
+      "KeysInformations": [
+        "Filière IRC : Informatique et réseau de communication"
+      ]
+    }
+  ]
 }
