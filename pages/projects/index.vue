@@ -4,11 +4,10 @@
         <div class="flex-1 flex justify-between my-16">
             <div class="lg:w-2/3">
                 <h1 class="lg:text-8xl sm:text-6xl text-4xl font-semibold uppercase lin-grad">
-                    Projets
+                    {{ $t('Projects.Page.Title') }}
                 </h1>
                 <p class="md:text-2xl lg:w-11/12 font-light">
-                    Découvrez une sélection de projets sur lesquels j'ai travaillé, mettant en avant mes compétences et
-                    mon expertise dans le développement web et logiciel.
+                    {{ $t('Projects.Page.Description') }}
                 </p>
             </div>
         </div>

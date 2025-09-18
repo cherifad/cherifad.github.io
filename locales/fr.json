@@ -51,5 +51,7 @@
   "LanguageSelector.Button.AriaLabel.French": "Changer la langue pour le français",
   "Error.Title": "Oups ! Quelque chose s'est mal passé.",
   "Error.Message": "Une erreur inattendue est survenue. Veuillez réessayer plus tard ou me contacter directement.",
-  "Error.Button": "Effacer l'erreur et retourner à l'accueil"
+  "Error.Button": "Effacer l'erreur et retourner à l'accueil",
+  "Projects.Page.Title": "Projets",
+  "Projects.Page.Description": "Voici quelques projets sur lesquels j'ai travaillé et qui mettent en valeur mes compétences en développement web et logiciel."
 }

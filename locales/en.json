@@ -51,5 +51,7 @@
   "LanguageSelector.Button.AriaLabel.French": "Change language to French",
   "Error.Title": "Oops! Something went wrong.",
   "Error.Message": "An unexpected error has occurred. Please try again later or contact me directly.",
-  "Error.Button": "Clear Error & Go Home"
+  "Error.Button": "Clear Error & Go Home",
+  "Projects.Page.Title": "Projects",
+  "Projects.Page.Description": "Here are some of the projects I have worked on that showcase my skills and expertise in web and software development."
 }
