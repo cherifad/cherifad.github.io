@@ -2,173 +2,283 @@
   "SectionProjectsList": [
     {
       "Title": "Crous'tillant",
-      "Description": "Un site internet pour afficher les menus des restaurants universitaires et cafétérias des Crous de France. Les données proviennent des sites des restaurants.",
+      "Slug": "croustillant",
+      "Description": "Un site web qui affiche les menus des restaurants universitaires et cafétérias du Crous en France. Les données proviennent directement des sites des restaurants.",
       "Link": "https://croustillant.vercel.app",
+      "Repository": "https://github.com/CROUStillant-Developpement/CROUStillantWeb",
       "Technologies": [
-        {
-          "Name": "Python",
-          "Icon": "devicon:python"
-        },
-        {
-          "Name": "NextJs",
-          "Icon": "devicon:nextjs-wordmark"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "TypeScript",
-          "Icon": "devicon:typescript"
-        },
-        {
-          "Name": "Prisma",
-          "Icon": "devicon:prisma"
-        },
-        {
-          "Name": "PostgreSQL",
-          "Icon": "devicon:postgresql"
-        }
+        { "Name": "Python", "Icon": "devicon:python" },
+        { "Name": "NextJs", "Icon": "devicon:nextjs-wordmark" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "TypeScript", "Icon": "devicon:typescript" },
+        { "Name": "Prisma", "Icon": "devicon:prisma" },
+        { "Name": "PostgreSQL", "Icon": "devicon:postgresql" }
       ],
-      "Image": "/img/project-img/crousstillant.png",
-      "Year": "2024"
+      "Image": "main.png",
+      "Year": "2024",
+
+      "Details": {
+        "Overview": "Crous'tillant est une plateforme qui centralise les menus des restaurants universitaires du Crous en France, afin d’offrir aux étudiants un accès simple, rapide et adapté au mobile pour consulter les repas disponibles.",
+        "Problem": "Les étudiants devaient consulter manuellement plusieurs sites de restaurants différents, souvent mal conçus ou obsolètes, pour trouver les menus. Cela rendait la planification des repas compliquée et chronophage.",
+        "Solution": "Nous avons développé un scraper en Python capable de collecter automatiquement les menus depuis différents sites du Crous, de les normaliser, puis de les stocker dans une base PostgreSQL. Les données sont ensuite affichées dans une application web moderne réalisée avec Next.js et TailwindCSS.",
+        "Features": [
+          "Agrégation quotidienne des menus de plusieurs restaurants du Crous",
+          "Recherche et filtrage par localisation, type de repas et date",
+          "Interface responsive optimisée pour ordinateur et mobile",
+          "Mises à jour automatiques grâce à un scraper planifié",
+          "Outils d’administration pour gérer les sources de restaurants"
+        ],
+        "Challenges": [
+          "Formats HTML très variables selon les sites des restaurants",
+          "Changements fréquents dans les structures de menus nécessitant un scraper robuste",
+          "Maintenir de bonnes performances tout en traitant des données en direct",
+          "Concevoir une interface simple, claire et accessible pour les étudiants"
+        ],
+        "MyRole": [
+          "Développement du scraper en Python pour collecter et normaliser les menus",
+          "Conception et implémentation du schéma de base de données avec Prisma + PostgreSQL",
+          "Création de l’interface frontend avec Next.js, TailwindCSS et TypeScript",
+          "Mise en place du déploiement continu (CI/CD) sur Vercel"
+        ],
+        "LessonsLearned": [
+          "Gestion de données réelles et non structurées issues de sources hétérogènes",
+          "Importance d’une base de données bien pensée pour la scalabilité",
+          "Amélioration des pratiques de collaboration avec GitHub et les pull requests",
+          "Équilibre entre performance technique et expérience utilisateur"
+        ],
+        "Screenshots": ["1.png", "2.png", "3.png", "4.png"],
+        "FutureImprovements": [
+          "Création de comptes utilisateurs avec favoris et planification des repas",
+          "Ajout d’informations nutritionnelles et sur les allergènes",
+          "Remplacer le scraping par une API officielle si le Crous en propose une",
+          "Ajout d’un mode sombre et d’améliorations en accessibilité"
+        ]
+      }
     },
     {
       "Title": "Navidrome Tools",
+      "Slug": "navidrome-tools",
       "Description": "Un outil pour synchroniser les playlists entre Navidrome et Spotify.",
       "Link": "https://github.com/cherifad/Navidrome-Tools",
       "Technologies": [
-        {
-          "Name": "Python",
-          "Icon": "devicon:python"
-        },
-        {
-          "Name": "SQL Lite",
-          "Icon": "file-icons:sqlite"
-        }
+        { "Name": "Python", "Icon": "devicon:python" },
+        { "Name": "SQLite", "Icon": "file-icons:sqlite" }
       ],
-      "Image": "https://picsum.photos/seed/picsum/500/500",
-      "Year": "2023"
+      "Image": "main.png",
+      "Year": "2023",
+      "Details": {
+        "Overview": "Navidrome Tools est un utilitaire conçu pour synchroniser les playlists entre un serveur musical auto-hébergé Navidrome et Spotify.",
+        "Problem": "Navidrome est excellent pour la gestion musicale auto-hébergée, mais il ne propose pas nativement la synchronisation des playlists avec Spotify.",
+        "Solution": "L’outil comble cette lacune en offrant un moyen simple de maintenir des playlists cohérentes entre Navidrome et Spotify.",
+        "Features": [
+          "Export des playlists depuis Navidrome",
+          "Synchronisation des playlists avec Spotify",
+          "Mises à jour automatiques en cas de changements",
+          "Léger et facile à exécuter"
+        ],
+        "Challenges": [
+          "Intégration de l’API Spotify avec Navidrome",
+          "Gestion sécurisée de l’authentification",
+          "Résolution des conflits de playlists"
+        ],
+        "MyRole": [
+          "Conception et développement de l’outil de synchronisation",
+          "Implémentation de l’intégration avec l’API Spotify",
+          "Gestion de la base de données avec SQLite"
+        ],
+        "LessonsLearned": [
+          "Travail avec des APIs tierces",
+          "Gestion de l’authentification OAuth",
+          "Maintenir la cohérence des données entre plateformes"
+        ],
+        "FutureImprovements": [
+          "Ajouter une interface graphique",
+          "Support d’autres plateformes de streaming",
+          "Synchronisation en temps réel au lieu de mises à jour manuelles"
+        ]
+      }
     },
     {
       "Title": "Vinodrill",
-      "Description": "Projet pédaogique de 2ème année de BUT Informatique. Le but était de recréer un site web basé sur l'original (vinotrip.fr) en utilisant les technologies vues en cours. Le site est un réservateur de séjour oenologique.",
+      "Slug": "vinodrill",
+      "Description": "Projet pédagogique de 2ème année de BUT Informatique : recréer un site de réservation de séjours œnologiques inspiré de vinotrip.fr avec les technologies vues en cours.",
       "Link": "https://github.com/cherifad/Vinodrill_Back",
       "Technologies": [
-        {
-          "Name": "C# (2ème version de l'API)",
-          "Icon": "devicon:csharp"
-        },
-        {
-          "Name": "PHP",
-          "Icon": "devicon:php"
-        },
-        {
-          "Name": "PostgreSQL",
-          "Icon": "devicon:postgresql"
-        },
-        {
-          "Name": "VueJs",
-          "Icon": "devicon:vuejs"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "Laravel (1ère version de l'API)",
-          "Icon": "devicon:laravel"
-        },
-        {
-          "Name": "Python (Pour générer un jeu de données)",
-          "Icon": "devicon:python"
-        }
+        { "Name": "C#", "Icon": "devicon:csharp" },
+        { "Name": "PHP", "Icon": "devicon:php" },
+        { "Name": "PostgreSQL", "Icon": "devicon:postgresql" },
+        { "Name": "Vue.js", "Icon": "devicon:vuejs" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "Laravel", "Icon": "devicon:laravel" },
+        { "Name": "Python (génération de données)", "Icon": "devicon:python" }
       ],
-      "Image": "/img/project-img/vinodrill.png",
-      "Year": "2022-2023"
+      "Image": "main.png",
+      "Year": "2022-2023",
+      "Details": {
+        "Overview": "Vinodrill est un projet pédagogique où l’objectif était de recréer un site de réservation de séjours œnologiques. Il combine frontend et backend.",
+        "Problem": "Le défi consistait à reproduire un site existant (vinotrip.fr) uniquement avec les outils et frameworks appris en cours.",
+        "Solution": "Nous avons conçu une application web complète avec système de réservation, gestion dynamique des données et interface utilisateur ergonomique.",
+        "Features": [
+          "Système de réservation de séjours œnologiques",
+          "Frontend avec Vue.js et TailwindCSS",
+          "APIs backend en Laravel (v1) et C# (v2)",
+          "Base de données PostgreSQL",
+          "Jeu de données généré avec Python"
+        ],
+        "Challenges": [
+          "Travail en équipe sur différentes technologies",
+          "Implémentation de deux versions d’API (Laravel et C#)",
+          "Gestion des données relationnelles avec PostgreSQL"
+        ],
+        "MyRole": [
+          "Développement de l’API backend",
+          "Conception du schéma de base de données",
+          "Contribution au frontend"
+        ],
+        "LessonsLearned": [
+          "Travail en équipe sur un projet full-stack",
+          "Utilisation de PHP et C# pour le développement d’API",
+          "Mise en pratique de méthodes agiles en contexte académique"
+        ],
+        "FutureImprovements": [
+          "Améliorer le design de l’interface",
+          "Ajouter le paiement en ligne",
+          "Enrichir le jeu de données avec des données réelles"
+        ]
+      }
     },
     {
       "Title": "Ce site web",
-      "Description": "Mon portfolio. Il est basé sur un modèle de site web que trouvé sur Dribbble (lien dans le pied de page). J'ai décidé de l'utiliser pour mon portfolio car je le trouvais très joli.",
+      "Slug": "this-website",
+      "Description": "Mon portfolio, basé sur un modèle trouvé sur Dribbble et personnalisé pour répondre à mes besoins.",
       "Link": "#",
       "Technologies": [
-        {
-          "Name": "Nuxt.js",
-          "Icon": "devicon:nuxtjs"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "TypeScript",
-          "Icon": "devicon:typescript"
-        }
+        { "Name": "Nuxt.js", "Icon": "devicon:nuxtjs" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "TypeScript", "Icon": "devicon:typescript" }
       ],
-      "Image": "/img/project-img/portfoliov2-EN.png",
-      "Year": "2024"
+      "Image": "main.png",
+      "Year": "2024",
+      "Details": {
+        "Overview": "Ceci est mon site web personnel de portfolio, conçu pour présenter mes projets, compétences et expériences.",
+        "Problem": "J’avais besoin d’un portfolio moderne et responsive pour valoriser mon travail.",
+        "Solution": "J’ai adapté un modèle trouvé sur Dribbble et l’ai personnalisé avec Nuxt.js, TailwindCSS et TypeScript.",
+        "Features": [
+          "Présentation des projets avec pages détaillées",
+          "Design responsive",
+          "Stack moderne (Nuxt + Tailwind + TS)"
+        ],
+        "Challenges": [
+          "Adapter un design existant à mes besoins",
+          "Organisation dynamique du contenu",
+          "Garantie de la compatibilité responsive"
+        ],
+        "MyRole": [
+          "Conception et personnalisation du portfolio",
+          "Implémentation des pages projet et de la structure",
+          "Déploiement et maintenance"
+        ],
+        "LessonsLearned": [
+          "Équilibrer esthétique et fonctionnalités",
+          "Améliorer le workflow avec TailwindCSS",
+          "Structurer des données de projet via JSON"
+        ],
+        "FutureImprovements": [
+          "Ajouter une section blog",
+          "Améliorer les animations et transitions",
+          "Support du mode sombre"
+        ]
+      }
     },
     {
-      "Title": "Portfolio",
-      "Description": "Mon ancient portfolio",
+      "Title": "Ancien Portfolio",
+      "Slug": "old-portfolio",
+      "Description": "Mon premier portfolio réalisé avec HTML, CSS et JavaScript.",
       "Link": "https://cherifad.github.io/old/",
       "Technologies": [
-        {
-          "Name": "HTML",
-          "Icon": "devicon:html5"
-        },
-        {
-          "Name": "CSS",
-          "Icon": "devicon:css3"
-        },
-        {
-          "Name": "JavaScript",
-          "Icon": "devicon:javascript"
-        }
+        { "Name": "HTML", "Icon": "devicon:html5" },
+        { "Name": "CSS", "Icon": "devicon:css3" },
+        { "Name": "JavaScript", "Icon": "devicon:javascript" }
       ],
-      "Image": "/img/project-img/portfolioOld.png",
-      "Year": "2022"
+      "Image": "main.png",
+      "Year": "2022",
+      "Details": {
+        "Overview": "Ceci était mon premier site portfolio pour présenter mes projets et expérimentations.",
+        "Problem": "J’avais besoin d’une présence en ligne mais je ne maîtrisais que les bases du développement frontend.",
+        "Solution": "J’ai créé un site statique avec HTML, CSS et JavaScript.",
+        "Features": [
+          "Présentation simple des projets",
+          "Mise en page responsive statique",
+          "Design personnalisé avec CSS"
+        ],
+        "Challenges": [
+          "Apprentissage des bases du développement web",
+          "Création d’un design responsive sans framework"
+        ],
+        "MyRole": ["Conception et développement complet du site"],
+        "LessonsLearned": [
+          "Bases des technologies web (HTML, CSS, JS)",
+          "Notions de responsive design"
+        ],
+        "FutureImprovements": [
+          "Migrer vers un stack moderne",
+          "Ajouter interactivité et animations"
+        ]
+      }
     },
     {
       "Title": "Smart EV",
-      "Description": "Un site web pour calculé un itinéraire en voiture électrique. Le site utilise l'API de MapBox pour calculer l'itinéraire brut puis une API maison pour placer des points de recharge sur l'itinéraire.",
+      "Slug": "smart-ev",
+      "Description": "Un site web permettant de calculer un trajet pour voiture électrique. Le site utilise l’API MapBox pour calculer l’itinéraire brut et une API maison pour placer les bornes de recharge sur le parcours.",
       "Link": "https://github.com/cpe-lyon/projet-smart-ev-altinel-cherif",
       "Technologies": [
-        {
-          "Name": "Next.js",
-          "Icon": "devicon:nextjs"
-        },
-        {
-          "Name": "React",
-          "Icon": "devicon:react"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "TypeScript",
-          "Icon": "devicon:typescript"
-        },
-        {
-          "Name": "Prisma",
-          "Icon": "devicon:prisma"
-        },
-        {
-          "Name": "SQL Lite",
-          "Icon": "file-icons:sqlite"
-        },
-        {
-          "Name": "MapBox",
-          "Icon": "simple-icons:mapbox"
-        },
-        {
-          "Name": "OpenStreetMap",
-          "Icon": "simple-icons:openstreetmap"
-        }
+        { "Name": "Next.js", "Icon": "devicon:nextjs" },
+        { "Name": "React", "Icon": "devicon:react" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "TypeScript", "Icon": "devicon:typescript" },
+        { "Name": "Prisma", "Icon": "devicon:prisma" },
+        { "Name": "SQLite", "Icon": "file-icons:sqlite" },
+        { "Name": "MapBox", "Icon": "simple-icons:mapbox" },
+        { "Name": "OpenStreetMap", "Icon": "simple-icons:openstreetmap" }
       ],
-      "Image": "/img/project-img/smartEV.png",
-      "Year": "2024"
+      "Image": "main.png",
+      "Year": "2024",
+
+      "Details": {
+        "Overview": "Smart EV est une application web qui calcule les trajets optimaux pour véhicules électriques. Elle intègre MapBox pour la génération d’itinéraires et l’enrichit avec des algorithmes maison qui ajoutent automatiquement les bornes de recharge nécessaires.",
+        "Problem": "Planifier de longs trajets en voiture électrique peut être stressant en raison de l’autonomie limitée et du manque de visibilité sur la localisation des bornes de recharge.",
+        "Solution": "L’application propose un moyen simple de calculer des trajets adaptés aux voitures électriques. Elle garantit que des arrêts de recharge sont inclus, ce qui permet aux conducteurs de voyager sur de longues distances en toute sérénité.",
+        "Features": [
+          "Calcul d’itinéraires avec l’API MapBox",
+          "Ajout automatique de bornes de recharge sur le trajet",
+          "Carte interactive pour visualiser l’itinéraire",
+          "Design responsive pour ordinateur et mobile",
+          "Base de données gérée avec Prisma + SQLite"
+        ],
+        "Challenges": [
+          "Intégration de MapBox avec une logique de routage personnalisée",
+          "Gestion des contraintes propres aux véhicules électriques (autonomie de batterie)",
+          "Conception d’un modèle de données robuste pour les bornes de recharge"
+        ],
+        "MyRole": [
+          "Développement de l’API personnalisée pour l’ajout des bornes de recharge",
+          "Conception du schéma de base de données avec Prisma et SQLite",
+          "Création du frontend avec Next.js, React et TailwindCSS",
+          "Mise en place des types et validations avec TypeScript",
+          "Intégration de la carte avec MapBox et OpenStreetMap"
+        ],
+        "LessonsLearned": [
+          "Adapter une API générique à un cas d’usage spécifique",
+          "Équilibrer performance et interactivité en temps réel sur des cartes",
+          "Améliorer l’intégration de TypeScript dans une application Next.js"
+        ],
+        "FutureImprovements": [
+          "Ajout de comptes utilisateurs avec sauvegarde des trajets",
+          "Support de différents modèles de voitures électriques avec profils de batterie",
+          "Intégration des données en temps réel sur la disponibilité des bornes",
+          "Amélioration de l’optimisation des trajets avec trafic et météo"
+        ]
+      }
     }
   ]
 }

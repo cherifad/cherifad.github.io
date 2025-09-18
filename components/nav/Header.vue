@@ -3,14 +3,14 @@
     <nav class="flex justify-evenly border-b-2 border-[#2a2a2c] py-8">
       <ul class="flex-1 justify-evenly items-center text-xl hidden lg:flex">
         <li class="cursor-pointer">
-          <a href="#projects">
+          <NuxtLink to="/#projects">
             {{ $t("Header.Menu.Projects") }}
-          </a>
+          </NuxtLink>
         </li>
         <li class="cursor-pointer">
-          <a href="#edu">
+          <NuxtLink to="/#edu">
             {{ $t("Header.Menu.School") }}
-          </a>
+          </NuxtLink>
         </li>
       </ul>
       <div
@@ -41,15 +41,15 @@
           />
         </transition>
       </div>
-      <div class="font-bold flex flex-col justify-center items-center text-4xl">
+      <NuxtLink to="/" class="font-bold flex flex-col justify-center items-center text-4xl">
         <span class="lin-grad"> Adlen </span>
         <span class="lin-grad"> CHERIF </span>
-      </div>
+      </NuxtLink>
       <ul class="flex-1 justify-evenly items-center text-xl hidden lg:flex">
         <li class="cursor-pointer">
-          <a href="#contact">
+          <NuxtLink to="/#contact">
             {{ $t("Header.Menu.Contact") }}
-          </a>
+          </NuxtLink>
         </li>
         <li class="cursor-pointer">
           <LanguageSwitcher />
@@ -79,13 +79,13 @@
       <div v-if="isMenuOpen" class="lg:hidden">
         <ul class="flex flex-col items-center gap-4 mt-3">
           <li class="cursor-pointer">
-            <a href="#projects">{{ $t("Header.Menu.Projects") }}</a>
+            <NuxtLink to="/#projects">{{ $t("Header.Menu.Projects") }}</NuxtLink>
           </li>
           <li class="cursor-pointer">
-            <a href="#edu">{{ $t("Header.Menu.School") }}</a>
+            <NuxtLink to="/#edu">{{ $t("Header.Menu.School") }}</NuxtLink>
           </li>
           <li class="cursor-pointer">
-            <a href="#contact">{{ $t("Header.Menu.Contact") }}</a>
+            <NuxtLink to="/#contact">{{ $t("Header.Menu.Contact") }}</NuxtLink>
           </li>
           <li class="cursor-pointer">
             <LanguageSwitcher />

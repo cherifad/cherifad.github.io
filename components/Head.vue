@@ -9,9 +9,3 @@
 import Header from "@/components/nav/Header.vue";
 import Home from "@/components/Home.vue";
 </script>
-
-<style>
-#head {
-    background: linear-gradient(117deg, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 35%);
-}
-</style>

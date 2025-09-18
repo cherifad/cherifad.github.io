@@ -2,173 +2,283 @@
   "SectionProjectsList": [
     {
       "Title": "Crous'tillant",
+      "Slug": "croustillant",
       "Description": "A website to display the menus of the university restaurants and cafeterias of France's Crous. The data comes from the restaurant websites.",
       "Link": "https://croustillant.vercel.app",
+      "Repository": "https://github.com/CROUStillant-Developpement/CROUStillantWeb",
       "Technologies": [
-        {
-          "Name": "Python",
-          "Icon": "devicon:python"
-        },
-        {
-          "Name": "NextJs",
-          "Icon": "devicon:nextjs-wordmark"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "TypeScript",
-          "Icon": "devicon:typescript"
-        },
-        {
-          "Name": "Prisma",
-          "Icon": "devicon:prisma"
-        },
-        {
-          "Name": "PostgreSQL",
-          "Icon": "devicon:postgresql"
-        }
+        { "Name": "Python", "Icon": "devicon:python" },
+        { "Name": "NextJs", "Icon": "devicon:nextjs-wordmark" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "TypeScript", "Icon": "devicon:typescript" },
+        { "Name": "Prisma", "Icon": "devicon:prisma" },
+        { "Name": "PostgreSQL", "Icon": "devicon:postgresql" }
       ],
-      "Image": "/img/project-img/crousstillant.png",
-      "Year": "2024"
+      "Image": "main.png",
+      "Year": "2024",
+
+      "Details": {
+        "Overview": "Crous'tillant is a platform that centralizes the menus of Crous university restaurants in France, giving students a simple and mobile-friendly way to check what’s available on campus.",
+        "Problem": "Students often had to check multiple outdated and inconsistent restaurant websites to find menus, which made meal planning frustrating and time-consuming.",
+        "Solution": "We built a scraper in Python to automatically collect and standardize menu data across different Crous restaurants. The data is stored in a PostgreSQL database, then displayed in a responsive Next.js web app with a clean, modern UI.",
+        "Features": [
+          "Aggregated daily menus from multiple Crous restaurants",
+          "Search and filter meals by location, type, and date",
+          "Responsive UI optimized for both desktop and mobile",
+          "Live data updates using a scheduled scraper",
+          "Basic admin tools for maintaining restaurant sources"
+        ],
+        "Challenges": [
+          "Different restaurants used inconsistent HTML structures, making scraping tricky",
+          "Some menus changed formats unexpectedly, requiring scraper resilience",
+          "Keeping the frontend fast while pulling live data",
+          "Ensuring that the UI remained accessible and user-friendly"
+        ],
+        "MyRole": [
+          "Developed the scraping system in Python to fetch and normalize menus",
+          "Designed and implemented the database schema using Prisma + PostgreSQL",
+          "Built the core Next.js frontend with TailwindCSS and TypeScript",
+          "Set up CI/CD on Vercel for automatic deployment"
+        ],
+        "LessonsLearned": [
+          "How to deal with messy real-world data and build robust scrapers",
+          "The importance of database design for scalable data handling",
+          "Improving collaboration workflows with GitHub and PR reviews",
+          "Balancing performance and usability in a production web app"
+        ],
+        "Screenshots": ["1.png", "2.png", "3.png", "4.png"],
+        "FutureImprovements": [
+          "Implement user accounts with favorites and personalized meal planning",
+          "Add nutrition and allergy information to meals",
+          "Switch from scraping to official APIs if Crous makes them available",
+          "Introduce dark mode and accessibility features"
+        ]
+      }
     },
     {
       "Title": "Navidrome Tools",
-      "Description": "Some useful tools for Navidrome, such as a playlist synchronizer with Spotify",
+      "Slug": "navidrome-tools",
+      "Description": "A tool to synchronize playlists between Navidrome and Spotify.",
       "Link": "https://github.com/cherifad/Navidrome-Tools",
       "Technologies": [
-        {
-          "Name": "Python",
-          "Icon": "devicon:python"
-        },
-        {
-          "Name": "SQL Lite",
-          "Icon": "file-icons:sqlite"
-        }
+        { "Name": "Python", "Icon": "devicon:python" },
+        { "Name": "SQLite", "Icon": "file-icons:sqlite" }
       ],
-      "Image": "https://picsum.photos/seed/picsum/500/500",
-      "Year": "2023"
+      "Image": "/img/project-img/navidrome-tools/main.png",
+      "Year": "2023",
+      "Details": {
+        "Overview": "Navidrome Tools is a utility designed to synchronize playlists between a self-hosted Navidrome music server and Spotify.",
+        "Problem": "Navidrome is great for self-hosted music, but it lacks native playlist synchronization with Spotify.",
+        "Solution": "The tool bridges this gap by offering an easy way to keep playlists consistent between Navidrome and Spotify.",
+        "Features": [
+          "Export playlists from Navidrome",
+          "Sync playlists with Spotify",
+          "Automated updates for changes",
+          "Lightweight and easy to run"
+        ],
+        "Challenges": [
+          "Integrating Spotify’s API with Navidrome",
+          "Handling authentication securely",
+          "Managing playlist conflicts"
+        ],
+        "MyRole": [
+          "Designed and developed the synchronization tool",
+          "Implemented the Spotify API integration",
+          "Handled database operations with SQLite"
+        ],
+        "LessonsLearned": [
+          "Working with third-party APIs",
+          "Handling OAuth authentication",
+          "Managing data consistency across platforms"
+        ],
+        "FutureImprovements": [
+          "Add a graphical interface",
+          "Support for more streaming platforms",
+          "Real-time sync instead of manual updates"
+        ]
+      }
     },
     {
       "Title": "Vinodrill",
-      "Description": "Year 2 BUT Computer Science pedagogical project. The aim was to recreate a website based on the original (vinotrip.fr) using the technologies seen in class. The site is a booking agent for wine tours.",
+      "Slug": "vinodrill",
+      "Description": "A 2nd-year university project: recreating a wine tourism booking website inspired by vinotrip.fr, using technologies studied in class.",
       "Link": "https://github.com/cherifad/Vinodrill_Back",
       "Technologies": [
-        {
-          "Name": "C# (2nd api version)",
-          "Icon": "devicon:csharp"
-        },
-        {
-          "Name": "PHP",
-          "Icon": "devicon:php"
-        },
-        {
-          "Name": "PostgreSQL",
-          "Icon": "devicon:postgresql"
-        },
-        {
-          "Name": "VueJs",
-          "Icon": "devicon:vuejs"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "Laravel (1st api version)",
-          "Icon": "devicon:laravel"
-        },
-        {
-          "Name": "Python (to generate some data)",
-          "Icon": "devicon:python"
-        }
+        { "Name": "C#", "Icon": "devicon:csharp" },
+        { "Name": "PHP", "Icon": "devicon:php" },
+        { "Name": "PostgreSQL", "Icon": "devicon:postgresql" },
+        { "Name": "Vue.js", "Icon": "devicon:vuejs" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "Laravel", "Icon": "devicon:laravel" },
+        { "Name": "Python (for dataset generation)", "Icon": "devicon:python" }
       ],
       "Image": "/img/project-img/vinodrill.png",
-      "Year": "2022-2023"
+      "Year": "2022-2023",
+      "Details": {
+        "Overview": "Vinodrill is a pedagogical project where the goal was to recreate a wine tourism booking site. It combined both frontend and backend technologies.",
+        "Problem": "The challenge was to mimic a real-world website (vinotrip.fr) using only the tools and frameworks learned during the academic year.",
+        "Solution": "We built a full web application with a booking system, dynamic data handling, and a clean user interface.",
+        "Features": [
+          "Wine tourism stay booking system",
+          "Frontend with Vue.js and TailwindCSS",
+          "Backend APIs with Laravel (v1) and C# (v2)",
+          "PostgreSQL database",
+          "Dataset generated with Python"
+        ],
+        "Challenges": [
+          "Team collaboration with different stacks",
+          "Implementing two API versions (Laravel, C#)",
+          "Managing relational data with PostgreSQL"
+        ],
+        "MyRole": [
+          "Backend API development",
+          "Database schema design",
+          "Assisted in frontend implementation"
+        ],
+        "LessonsLearned": [
+          "Working in a team on a full-stack project",
+          "Using both PHP and C# for API development",
+          "Applying agile methods in an academic context"
+        ],
+        "FutureImprovements": [
+          "Improve UI design",
+          "Add online payments",
+          "Enhance dataset with real-world data"
+        ]
+      }
     },
     {
-      "Title": "This website",
-      "Description": "My portfolio. It is based on a website template that I found on Dribbble (link in the footer). I decided to use it for my portfolio because I found it very pretty.",
+      "Title": "This Website",
+      "Slug": "this-website",
+      "Description": "My portfolio website, based on a template I found on Dribbble and customized to fit my needs.",
       "Link": "#",
       "Technologies": [
-        {
-          "Name": "Nuxt.js",
-          "Icon": "devicon:nuxtjs"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "TypeScript",
-          "Icon": "devicon:typescript"
-        }
+        { "Name": "Nuxt.js", "Icon": "devicon:nuxtjs" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "TypeScript", "Icon": "devicon:typescript" }
       ],
       "Image": "/img/project-img/portfoliov2-EN.png",
-      "Year": "2024"
+      "Year": "2024",
+      "Details": {
+        "Overview": "This is my personal portfolio website, designed to showcase my projects, skills, and experiences.",
+        "Problem": "I needed a modern and responsive portfolio to present my work effectively.",
+        "Solution": "I adapted a Dribbble template and customized it using Nuxt.js, TailwindCSS, and TypeScript.",
+        "Features": [
+          "Project showcase with detailed pages",
+          "Responsive design",
+          "Modern stack (Nuxt + Tailwind + TS)"
+        ],
+        "Challenges": [
+          "Adapting a design template to my needs",
+          "Organizing content dynamically",
+          "Ensuring responsive behavior"
+        ],
+        "MyRole": [
+          "Designed and customized the portfolio",
+          "Implemented project pages and layouts",
+          "Deployed and maintained the site"
+        ],
+        "LessonsLearned": [
+          "Balancing aesthetics with functionality",
+          "Improving TailwindCSS workflow",
+          "Structuring JSON-driven project data"
+        ],
+        "FutureImprovements": [
+          "Add a blog section",
+          "Improve animations and transitions",
+          "Dark mode support"
+        ]
+      }
     },
     {
-      "Title": "Portfolio",
-      "Description": "My old portfolio website",
+      "Title": "Old Portfolio",
+      "Slug": "old-portfolio",
+      "Description": "My previous portfolio built with plain HTML, CSS, and JavaScript.",
       "Link": "https://cherifad.github.io/old/",
       "Technologies": [
-        {
-          "Name": "HTML",
-          "Icon": "devicon:html5"
-        },
-        {
-          "Name": "CSS",
-          "Icon": "devicon:css3"
-        },
-        {
-          "Name": "JavaScript",
-          "Icon": "devicon:javascript"
-        }
+        { "Name": "HTML", "Icon": "devicon:html5" },
+        { "Name": "CSS", "Icon": "devicon:css3" },
+        { "Name": "JavaScript", "Icon": "devicon:javascript" }
       ],
       "Image": "/img/project-img/portfolioOld.png",
-      "Year": "2025"
+      "Year": "2022",
+      "Details": {
+        "Overview": "This was my first personal portfolio to showcase my work and experiments.",
+        "Problem": "I needed an online presence but only had basic knowledge of frontend technologies.",
+        "Solution": "I built a static site using HTML, CSS, and JavaScript.",
+        "Features": [
+          "Simple project showcase",
+          "Static responsive layout",
+          "Basic design with custom CSS"
+        ],
+        "Challenges": [
+          "Learning web development basics",
+          "Creating responsive layouts without frameworks"
+        ],
+        "MyRole": ["Designed and built the site from scratch"],
+        "LessonsLearned": [
+          "Core web technologies (HTML, CSS, JS)",
+          "Responsive design basics"
+        ],
+        "FutureImprovements": [
+          "Upgrade to a modern stack",
+          "Add interactivity and animations"
+        ]
+      }
     },
     {
       "Title": "Smart EV",
+      "Slug": "smart-ev",
       "Description": "A website to calculate an electric car route. The site uses the MapBox API to calculate the raw route and then a homemade API to place charging points on the route.",
       "Link": "https://github.com/cpe-lyon/projet-smart-ev-altinel-cherif",
       "Technologies": [
-        {
-          "Name": "Next.js",
-          "Icon": "devicon:nextjs"
-        },
-        {
-          "Name": "React",
-          "Icon": "devicon:react"
-        },
-        {
-          "Name": "TailwindCSS",
-          "Icon": "devicon:tailwindcss"
-        },
-        {
-          "Name": "TypeScript",
-          "Icon": "devicon:typescript"
-        },
-        {
-          "Name": "Prisma",
-          "Icon": "devicon:prisma"
-        },
-        {
-          "Name": "SQL Lite",
-          "Icon": "file-icons:sqlite"
-        },
-        {
-          "Name": "MapBox",
-          "Icon": "simple-icons:mapbox"
-        },
-        {
-          "Name": "OpenStreetMap",
-          "Icon": "simple-icons:openstreetmap"
-        }
+        { "Name": "Next.js", "Icon": "devicon:nextjs" },
+        { "Name": "React", "Icon": "devicon:react" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "TypeScript", "Icon": "devicon:typescript" },
+        { "Name": "Prisma", "Icon": "devicon:prisma" },
+        { "Name": "SQLite", "Icon": "file-icons:sqlite" },
+        { "Name": "MapBox", "Icon": "simple-icons:mapbox" },
+        { "Name": "OpenStreetMap", "Icon": "simple-icons:openstreetmap" }
       ],
-      "Image": "/img/project-img/smartEV.png",
-      "Year": "2024"
+      "Image": "main.png",
+      "Year": "2024",
+
+      "Details": {
+        "Overview": "Smart EV is a web application that calculates optimal electric vehicle routes. It integrates MapBox for route generation and enhances it with custom algorithms that automatically insert charging stations along the way.",
+        "Problem": "Planning long trips with an electric vehicle can be stressful due to limited range and uncertainty about charging station locations.",
+        "Solution": "The app provides a seamless way to calculate EV-friendly routes. It ensures that charging stops are included on the journey, allowing drivers to travel long distances with confidence.",
+        "Features": [
+          "Route calculation using MapBox API",
+          "Automatic insertion of charging stations along the path",
+          "Interactive map with route visualization",
+          "Responsive design for desktop and mobile",
+          "Database support with Prisma + SQLite"
+        ],
+        "Challenges": [
+          "Integrating MapBox with custom routing logic",
+          "Handling EV-specific constraints like battery autonomy",
+          "Building a robust data model for charging stations"
+        ],
+        "MyRole": [
+          "Developed the custom API for charging station placement",
+          "Designed the database schema with Prisma and SQLite",
+          "Built the frontend with Next.js, React, and TailwindCSS",
+          "Implemented TypeScript types and validations",
+          "Worked on map integration with MapBox and OpenStreetMap"
+        ],
+        "LessonsLearned": [
+          "How to adapt generic APIs to specific use cases",
+          "Balancing performance with real-time user interaction on maps",
+          "Improving TypeScript integration in a Next.js app"
+        ],
+        "FutureImprovements": [
+          "Add user accounts with saved routes",
+          "Support for different EV models with custom battery profiles",
+          "Integration with real-time charging station availability data",
+          "Improve route optimization with traffic and weather data"
+        ]
+      }
     }
   ]
 }
