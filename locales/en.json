@@ -48,5 +48,8 @@
   "Footer.Button.ReportIssue": "Report an issue",
   "Footer.Button.ReportIssue.Url": "https://github.com/cherifad/cherifad.github.io/issues/new?title=Huston%2C+we+have+a+problem&body=I%27m+having+a+problem+with+the+website+and+here%27s+what+it+is%3A",
   "LanguageSelector.Button.AriaLabel.English": "Change language to English",
-  "LanguageSelector.Button.AriaLabel.French": "Change language to French"
+  "LanguageSelector.Button.AriaLabel.French": "Change language to French",
+  "Error.Title": "Oops! Something went wrong.",
+  "Error.Message": "An unexpected error has occurred. Please try again later or contact me directly.",
+  "Error.Button": "Clear Error & Go Home"
 }

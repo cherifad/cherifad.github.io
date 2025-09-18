@@ -48,5 +48,8 @@
   "Footer.Button.ReportIssue": "Signaler un problème",
   "Footer.Button.ReportIssue.Url": "https://github.com/cherifad/cherifad.github.io/issues/new?title=Huston%2C+on+a+un+probl%C3%A8me&body=J%27ai+un+probl%C3%A8me+avec+le+site+et+voici+ce+que+c%27est%3A",
   "LanguageSelector.Button.AriaLabel.English": "Changer la langue pour l'anglais",
-  "LanguageSelector.Button.AriaLabel.French": "Changer la langue pour le français"
+  "LanguageSelector.Button.AriaLabel.French": "Changer la langue pour le français",
+  "Error.Title": "Oups ! Quelque chose s'est mal passé.",
+  "Error.Message": "Une erreur inattendue est survenue. Veuillez réessayer plus tard ou me contacter directement.",
+  "Error.Button": "Effacer l'erreur et retourner à l'accueil"
 }
