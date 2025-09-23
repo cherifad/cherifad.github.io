@@ -53,5 +53,19 @@
   "Error.Message": "An unexpected error has occurred. Please try again later or contact me directly.",
   "Error.Button": "Clear Error & Go Home",
   "Projects.Page.Title": "Projects",
-  "Projects.Page.Description": "Here are some of the projects I have worked on that showcase my skills and expertise in web and software development."
+  "Projects.Page.Description": "Here are some of the projects I have worked on that showcase my skills and expertise in web and software development.",
+  "Seo.Home.Title": "Adlen CHERIF | Full Stack Developer",
+  "Seo.Home.Description": "I am a Full Stack Developer based in Lyon, France. I am passionate about building web applications and solving problems.",
+  "Seo.Home.OgTitle": "Adlen CHERIF | Full Stack Developer",
+  "Seo.Home.OgDescription": "I am a Full Stack Developer based in Lyon, France. I am passionate about building web applications and solving problems.",
+  "Seo.Home.OgImage": "/img/seoHome.png",
+  "Seo.Project.Title": "{project} | Adlen CHERIF",
+  "Seo.Project.Description": "{description} | Adlen CHERIF",
+  "Seo.Project.OgTitle": "{project} | Adlen CHERIF",
+  "Seo.Project.OgDescription": "{description} | Adlen CHERIF",
+  "Seo.Projects.Title": "Projects | Adlen CHERIF",
+  "Seo.Projects.Description": "Here are some of the projects I have worked on that showcase my skills and expertise in web and software development. | Adlen CHERIF",
+  "Seo.Projects.OgTitle": "Projects | Adlen CHERIF",
+  "Seo.Projects.OgDescription": "Here are some of the projects I have worked on that showcase my skills and expertise in web and software development. | Adlen CHERIF",
+  "Seo.Projects.OgImage": "/img/seoHome.png"
 }
