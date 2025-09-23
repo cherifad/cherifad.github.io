@@ -132,7 +132,7 @@
 import Header from "@/components/nav/Header.vue";
 import Button from "@/components/common/Button.vue";
 
-const { tm, rt } = useI18n();
+const { tm, rt, locale } = useI18n();
 const route = useRoute();
 
 // Reactive project (recomputed when locale changes)
@@ -145,6 +145,23 @@ const project = computed(() =>
 if (!project.value) {
   throw createError({ statusCode: 404, statusMessage: "Project Not Found" });
 }
+
+useHead({
+  title: `${project.value.Title} | Adlen CHERIF`,
+  titleTemplate: '%s',
+  htmlAttrs: {
+    lang: locale.value
+  }
+})
+
+useSeoMeta({
+  title: `${project.value.Title} | Adlen CHERIF`,
+  description: `${project.value.Description} | Adlen CHERIF`,
+  ogTitle: `${project.value.Title} | Adlen CHERIF`,
+  ogDescription: `${project.value.Description} | Adlen CHERIF`,
+  ogImage: `/img/project-img/${project.value.Slug}/${project.value.Image}`,
+  twitterCard: 'summary_large_image'
+})
 
 // Reactive technologies
 const technologies = computed(() =>

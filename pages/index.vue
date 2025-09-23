@@ -10,14 +10,14 @@
 <script setup lang="ts">
 import HeadComponent from "@/components/Head.vue";
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 definePageMeta({
   layout: 'home'
 })
 
 useHead({
-  title: 'Adlen CHERIF | Full Stack Developer',
+  title: t('Seo.Home.Title'),
   titleTemplate: '%s',
   htmlAttrs: {
     lang: locale.value
@@ -25,11 +25,11 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'Adlen CHERIF | Full Stack Developer',
-  description: 'I am a Full Stack Developer based in Paris, France. I am passionate about building web applications and solving problems.',
-  ogTitle: 'Adlen CHERIF | Full Stack Developer',
-  ogDescription: 'I am a Full Stack Developer based in Paris, France. I am passionate about building web applications and solving problems.',
-  ogImage: '/img/seoHome.png',
+  title: t('Seo.Home.Title'),
+  description: t('Seo.Home.Description'),
+  ogTitle: t('Seo.Home.OgTitle'),
+  ogDescription: t('Seo.Home.OgDescription'),
+  ogImage: t('Seo.Home.OgImage'),
   twitterCard: 'summary_large_image'
 })
 </script>

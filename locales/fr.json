@@ -53,5 +53,19 @@
   "Error.Message": "Une erreur inattendue est survenue. Veuillez réessayer plus tard ou me contacter directement.",
   "Error.Button": "Effacer l'erreur et retourner à l'accueil",
   "Projects.Page.Title": "Projets",
-  "Projects.Page.Description": "Voici quelques projets sur lesquels j'ai travaillé et qui mettent en valeur mes compétences en développement web et logiciel."
+  "Projects.Page.Description": "Voici quelques projets sur lesquels j'ai travaillé et qui mettent en valeur mes compétences en développement web et logiciel.",
+  "Seo.Home.Title": "Adlen CHERIF | Développeur Full Stack",
+  "Seo.Home.Description": "Je suis un développeur Full Stack basé à Lyon, France. Je suis passionné par la création d'applications web et la résolution de problèmes.",
+  "Seo.Home.OgTitle": "Adlen CHERIF | Développeur Full Stack",
+  "Seo.Home.OgDescription": "Je suis un développeur Full Stack basé à Lyon, France. Je suis passionné par la création d'applications web et la résolution de problèmes.",
+  "Seo.Home.OgImage": "/img/seoHome.png",
+  "Seo.Project.Title": "{project} | Adlen CHERIF",
+  "Seo.Project.Description": "{description} | Adlen CHERIF",
+  "Seo.Project.OgTitle": "{project} | Adlen CHERIF",
+  "Seo.Project.OgDescription": "{description} | Adlen CHERIF",
+  "Seo.Projects.Title": "Projets | Adlen CHERIF",
+  "Seo.Projects.Description": "Voici quelques projets sur lesquels j'ai travaillé et qui mettent en valeur mes compétences en développement web et logiciel. | Adlen CHERIF",
+  "Seo.Projects.OgTitle": "Projets | Adlen CHERIF",
+  "Seo.Projects.OgDescription": "Voici quelques projets sur lesquels j'ai travaillé et qui mettent en valeur mes compétences en développement web et logiciel. | Adlen CHERIF",
+  "Seo.Projects.OgImage": "/img/seoHome.png"
 }

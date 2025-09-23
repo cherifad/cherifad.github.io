@@ -23,4 +23,22 @@
 <script setup>
 import Header from "@/components/nav/Header.vue";
 
+const { locale, t } = useI18n();
+
+useHead({
+    title: t('Seo.Projects.Title'),
+    titleTemplate: '%s',
+    htmlAttrs: {
+        lang: locale.value
+    }
+})
+
+useSeoMeta({
+    title: t('Seo.Projects.Title'),
+    description: t('Seo.Projects.Description'),
+    ogTitle: t('Seo.Projects.OgTitle'),
+    ogDescription: t('Seo.Projects.OgDescription'),
+    ogImage: t('Seo.Projects.OgImage'),
+    twitterCard: 'summary_large_image'
+})
 </script>
