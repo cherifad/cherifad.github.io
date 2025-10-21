@@ -23,6 +23,9 @@
   "Section.Contact.Form.Captcha.Question": "Combien font {operation} ?",
   "Section.Contact.Form.Captcha.Label": "Votre réponse",
   "Section.Contact.Form.Submit": "Envoyer",
+  "Section.Contact.Form.Subject": "Nouvelle soumission depuis cherifad.github.io",
+  "Section.Contact.Form.Blacklist": "argent facile,gagnez de l'argent,travail à domicile,cliquez ici,abonnez-vous maintenant,médicaments bon marché,viagra,offre de prêt,faire de l'argent rapidement,free money,work from home,click here,subscribe now",
+  "Section.Contact.Form.Autoresponse": "Merci — nous avons bien reçu votre message et vous répondrons sous peu.",
   "Section.Education.Title": "Parcours académique",
   "Section.Education.Description": "J'ai fais deux ans de BUT en informatique à l'IUT de Annecy, puis j'ai intégré CPE Lyon en 2023 pour suivre un cursus d'ingénieur en informatique et réseaux de communication en apprentissage.",
   "Section.Experience.Title": "Expérience",
@@ -68,4 +71,8 @@
   "Seo.Projects.OgTitle": "Projets | Adlen CHERIF",
   "Seo.Projects.OgDescription": "Voici quelques projets sur lesquels j'ai travaillé et qui mettent en valeur mes compétences en développement web et logiciel. | Adlen CHERIF",
   "Seo.Projects.OgImage": "/img/seoHome.png"
+  ,
+  "Thanks.Title": "Merci !",
+  "Thanks.Message": "Votre message a bien été reçu. Je vous répondrai dès que possible.",
+  "Thanks.BackHome": "Retour à l'accueil"
 }

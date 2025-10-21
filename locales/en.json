@@ -23,6 +23,9 @@
   "Section.Contact.Form.Captcha.Question": "What is the result of {operation}?",
   "Section.Contact.Form.Captcha.Label": "Answer",
   "Section.Contact.Form.Submit": "Send",
+  "Section.Contact.Form.Subject": "New submission from cherifad.github.io",
+  "Section.Contact.Form.Blacklist": "free money,work from home,click here,subscribe now,cheap pills,earn $$$,viagra,loan offer,make money fast",
+  "Section.Contact.Form.Autoresponse": "Thank you — we received your message and will reply shortly.",
   "Section.Education.Title": "Education",
   "Section.Education.Description": "I completed two years of a Bachelor's degree in Computer Science at the IUT of Annecy, then I joined CPE Lyon in 2023 to pursue a Master's degree in Computer Engineering and Communication Networks through an apprenticeship program.",
   "Section.Experience.Title": "Experience",
@@ -68,4 +71,8 @@
   "Seo.Projects.OgTitle": "Projects | Adlen CHERIF",
   "Seo.Projects.OgDescription": "Here are some of the projects I have worked on that showcase my skills and expertise in web and software development. | Adlen CHERIF",
   "Seo.Projects.OgImage": "/img/seoHome.png"
+  ,
+  "Thanks.Title": "Thank you!",
+  "Thanks.Message": "Your message has been received. I'll get back to you as soon as possible.",
+  "Thanks.BackHome": "Back to home"
 }
