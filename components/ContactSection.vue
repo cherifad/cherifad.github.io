@@ -1,13 +1,25 @@
 <template>
   <div class="mt-16">
     <SectionHeader :title="$t('Section.Contact.Title')" :description="$t('Section.Contact.Description')" />
-    <form class="lg:flex-row flex-col-reverse	flex gap-8" @submit="(e) => handleSubmit(e)">
+    <form class="lg:flex-row flex-col-reverse	flex gap-8" action="https://formsubmit.co/adlen.cherif@cpe.fr" method="POST" @submit="checkForm">
+      <!-- FormSubmit hidden fields -->
+      <input type="hidden" name="_replyto" :value="form.fromEmail" />
+      <input type="hidden" name="_next" :value="nextUrl" />
+  <input type="hidden" name="_subject" :value="$t('Section.Contact.Form.Subject')" />
+  <input type="hidden" name="_cc" value="" />
+  <input type="hidden" name="_blacklist" :value="$t('Section.Contact.Form.Blacklist')" />
+  <input type="hidden" name="_captcha" value="false" />
+      <!-- honeypot field (hidden from users) -->
+      <input type="text" name="_honey" style="display:none" />
+  <input type="hidden" name="_autoresponse" :value="$t('Section.Contact.Form.Autoresponse')" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_webhook" value="" />
       <div class="lg:w-8/12">
-        <Input :label="$t('Section.Contact.Form.Name')" type="text" :isBlack="true" v-model="form.fromName"
+        <Input :label="$t('Section.Contact.Form.Name')" type="text" name="name" :isBlack="true" v-model="form.fromName"
           :placeholder="$t('Section.Contact.Form.Name.Placeholder')" />
-        <Input :label="$t('Section.Contact.Form.Email')" type="email" :isBlack="true" v-model="form.fromEmail"
+        <Input :label="$t('Section.Contact.Form.Email')" type="email" name="email" :isBlack="true" v-model="form.fromEmail"
           :placeholder="$t('Section.Contact.Form.Email.Placeholder')" />
-        <Input :label="$t('Section.Contact.Form.Message')" type="textarea" :isBlack="true" v-model="form.message"
+        <Input :label="$t('Section.Contact.Form.Message')" type="textarea" name="message" :isBlack="true" v-model="form.message"
           :placeholder="$t('Section.Contact.Form.Message.Placeholder')" />
         <div class="text-[#969696] lg:hidden mt-4">
           <p class="text-2xl flex items-center mb-4">
@@ -18,7 +30,7 @@
             :label="$t('Section.Contact.Form.Captcha.Question', { operation: `${captcha.number1} ${captcha.randomMathOperation} ${captcha.number2}` })"
             :isBlack="true" v-model="form.userResult" />
         </div>
-        <Button class="lg:hidden w-full mt-8" :text="$t('Section.Contact.Form.Submit')" :isBlack="false"
+        <Button type="submit" class="lg:hidden w-full mt-8" :text="$t('Section.Contact.Form.Submit')" :isBlack="false"
           :disabled="buttonDisabled" icon="material-symbols:send-outline" transition="right" />
       </div>
       <div class="flex flex-col gap-4 justify-between flex-1">
@@ -44,7 +56,7 @@
               :label="$t('Section.Contact.Form.Captcha.Question', { operation: `${captcha.number1} ${captcha.randomMathOperation} ${captcha.number2}` })"
               :isBlack="true" v-model="form.userResult" />
           </div>
-          <Button class="hidden lg:block" :text="$t('Section.Contact.Form.Submit')" :isBlack="false"
+          <Button type="submit" class="hidden lg:block" :text="$t('Section.Contact.Form.Submit')" :isBlack="false"
             :disabled="buttonDisabled" icon="material-symbols:send-outline" transition="right" />
         </div>
       </div>
@@ -53,6 +65,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, watch } from 'vue';
 import Input from "@/components/common/Input.vue";
 import Button from "@/components/common/Button.vue";
 
@@ -68,6 +81,9 @@ const form = ref({
   message: "",
   userResult: "",
 });
+
+// URL to redirect to after successful submit (FormSubmit _next)
+const nextUrl = ref("");
 
 const formError = ref({
   fromName: false,
@@ -103,16 +119,17 @@ onMounted(() => {
   createRandomMathOperation();
   createRandomNumbers();
   checkForm();
+
+  // Only set nextUrl on client to avoid SSR issues
+  if (typeof window !== 'undefined') {
+    try {
+      // use origin if available, fallback to relative path
+      nextUrl.value = window.location.origin ? `${window.location.origin}/thanks` : '/thanks';
+    } catch (e) {
+      nextUrl.value = '/thanks';
+    }
+  }
 });
-
-const handleSubmit = (event: Event) => {
-  event.preventDefault();
-
-  if (buttonDisabled.value) return;
-
-  // open href in new tab
-  window.open(`mailto:adlen.cherif@cpe.fr?subject=Contact from ${form.value.fromName}&body=${form.value.message}`, "_blank");
-};
 
 const checkForm = () => {
   buttonDisabled.value = true;
@@ -156,7 +173,7 @@ const checkForm = () => {
   buttonDisabled.value = false;
 };
 
-watch(form.value, () => {
+watch(form, () => {
   checkForm();
-});
+}, { deep: true });
 </script>

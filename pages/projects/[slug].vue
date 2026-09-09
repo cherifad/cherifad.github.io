@@ -26,6 +26,29 @@
               transition="top-right" />
           </a>
         </div>
+        <div class="flex flex-row gap-4 flex-wrap mt-8">
+          <a v-if="project.Details.Overview" href="#overview"
+            class="text-sm bg-gray-200 px-2 py-1 rounded-md hover:bg-gray-300">{{
+              $t('Section.Projects.Single.Details.Overview') }}</a>
+          <a v-if="project.Details.Problem" href="#problem"
+            class="text-sm bg-gray-200 px-2 py-1 rounded-md hover:bg-gray-300">{{
+              $t('Section.Projects.Single.Details.Problem') }}</a>
+          <a v-if="project.Details.Solution" href="#solution"
+            class="text-sm bg-gray-200 px-2 py-1 rounded-md hover:bg-gray-300">{{
+              $t('Section.Projects.Single.Details.Solution') }}</a>
+          <a v-if="project.Details.Challenges && project.Details.Challenges.length" href="#challenges"
+            class="text-sm bg-gray-200 px-2 py-1 rounded-md hover:bg-gray-300">{{
+              $t('Section.Projects.Single.Details.Challenges') }}</a>
+          <a v-if="project.Details.LessonsLearned && project.Details.LessonsLearned.length" href="#lessons-learned"
+            class="text-sm bg-gray-200 px-2 py-1 rounded-md hover:bg-gray-300">{{
+              $t('Section.Projects.Single.Details.LessonsLearned') }}</a>
+          <a v-if="project.Details.FutureImprovements && project.Details.FutureImprovements.length"
+            href="#future-improvements" class="text-sm bg-gray-200 px-2 py-1 rounded-md hover:bg-gray-300">{{
+              $t('Section.Projects.Single.Details.FutureImprovements') }}</a>
+          <a v-if="project.Details.Screenshots && project.Details.Screenshots.length" href="#screenshots"
+            class="text-sm bg-gray-200 px-2 py-1 rounded-md hover:bg-gray-300">{{
+              $t('Section.Projects.Single.Details.Screenshots') }}</a>
+        </div>
       </div>
       <div class="w-1/3">
         <img v-if="project?.Image" :src="`/img/project-img/${project.Slug}/${project.Image}`" :alt="project.Title"
@@ -35,14 +58,14 @@
   </div>
   <div class="lg:px-16 px-9">
     <div class="mt-16">
-      <SectionHeader :title="$t('Section.Projects.Single.Details.Overview')" :description="project.Details.Overview"
+      <SectionHeader id="overview" :title="$t('Section.Projects.Single.Details.Overview')" :description="project.Details.Overview"
         class="mt-16" />
-      <SectionHeader :title="$t('Section.Projects.Single.Details.Problem')" :description="project.Details.Problem"
+      <SectionHeader id="problem" :title="$t('Section.Projects.Single.Details.Problem')" :description="project.Details.Problem"
         class="mt-16" />
-      <SectionHeader :title="$t('Section.Projects.Single.Details.Solution')" :description="project.Details.Solution"
+      <SectionHeader id="solution" :title="$t('Section.Projects.Single.Details.Solution')" :description="project.Details.Solution"
         class="mt-16" />
       <div class="mt-16">
-        <SectionHeader :title="$t('Section.Projects.Single.Details.Challenges')" />
+        <SectionHeader id="challenges" :title="$t('Section.Projects.Single.Details.Challenges')" />
         <ul class="text-[#969696] md:text-2xl text-lg font-light mt-2">
           <li v-for="(challenge, index) in project.Details.Challenges" :key="index" class="flex items-center gap-2">
             <Icon class="text-2xl" name="material-symbols-light:arrow-right-alt-rounded" />
@@ -51,7 +74,7 @@
         </ul>
       </div>
       <div class="mt-16">
-        <SectionHeader :title="$t('Section.Projects.Single.Details.LessonsLearned')" />
+        <SectionHeader id="lessons-learned" :title="$t('Section.Projects.Single.Details.LessonsLearned')" />
         <ul class="text-[#969696] md:text-2xl text-lg font-light mt-2">
           <li v-for="(lesson, index) in project.Details.LessonsLearned" :key="index" class="flex items-center gap-2">
             <Icon class="text-2xl" name="material-symbols-light:arrow-right-alt-rounded" />
@@ -60,7 +83,7 @@
         </ul>
       </div>
       <div class="mt-16" v-if="project.Details.FutureImprovements && project.Details.FutureImprovements.length">
-        <SectionHeader :title="$t('Section.Projects.Single.Details.FutureImprovements')" />
+        <SectionHeader id="future-improvements" :title="$t('Section.Projects.Single.Details.FutureImprovements')" />
         <ul class="text-[#969696] md:text-2xl text-lg font-light mt-2">
           <li v-for="(improvement, index) in project.Details.FutureImprovements" :key="index"
             class="flex items-center gap-2">
@@ -71,13 +94,14 @@
       </div>
 
       <div class="mt-16" v-if="project.Details.Screenshots && project.Details.Screenshots.length">
-        <SectionHeader :title="$t('Section.Projects.Single.Details.Screenshots')" />
+        <SectionHeader id="screenshots" :title="$t('Section.Projects.Single.Details.Screenshots')" />
 
         <!-- Galerie masonry -->
         <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4 mt-4">
           <div v-for="(screenshot, index) in project.Details.Screenshots" :key="index"
-            class="break-inside-avoid cursor-pointer overflow-hidden rounded-lg group" @click="openLightbox(index)">
-            <img :src="`/img/project-img/${project.Slug}/${screenshot}`" :alt="`Capture d’écran ${index + 1}`"
+            class="break-inside-avoid cursor-pointer overflow-hidden rounded-lg group"
+            @click="openLightbox(Number(index))">
+            <img :src="`/img/project-img/${project.Slug}/${screenshot}`" :alt="`Capture d’écran ${Number(index) + 1}`"
               class="w-full rounded-lg transform group-hover:scale-105 transition duration-300" />
           </div>
         </div>

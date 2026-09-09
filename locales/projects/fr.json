@@ -1,6 +1,59 @@
 {
   "SectionProjectsList": [
     {
+      "Title": "HabiTalk",
+      "Slug": "habitalk",
+      "Description": "Les avis vérifiés sur les immeubles, ancrés sur des bâtiments réels.",
+      "Link": "https://habitalk.fr",
+      "Technologies": [
+        { "Name": "Next.js", "Icon": "devicon:nextjs" },
+        { "Name": "React", "Icon": "devicon:react" },
+        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
+        { "Name": "TypeScript", "Icon": "devicon:typescript" },
+        { "Name": "FastAPI", "Icon": "devicon:fastapi" }
+      ],
+      "Image": "main.png",
+      "Year": "2026",
+      "Details": {
+        "Overview": "C'est un site web (habitalk.fr) qui permet de consulter et de déposer des avis sur des bâtiments ou immeubles résidents en France (isolation, propreté, chauffage, gestion du syndic, etc.). Il centralise également des données sur l'environnement local (proximité des transports, commerces, écoles) à partir de la Base de Données Nationale des Bâtiments.",
+        "Problem": "Les avis sur les immeubles sont souvent dispersés sur différents sites et forums, ce qui rend difficile pour les résidents de trouver des informations fiables et vérifiées sur la qualité de vie dans leur bâtiment ou quartier.",
+        "Solution": "HabiTalk centralise les avis sur les immeubles et les associe à des bâtiments réels grâce à la Base de Données Nationale des Bâtiments. Les utilisateurs peuvent ainsi consulter des avis vérifiés et déposer leurs propres retours sur la qualité de vie dans leur immeuble ou quartier.",
+        "Features": [
+          "Consultation d'avis vérifiés sur les immeubles",
+          "Dépôt d'avis par les résidents",
+          "Affichage des données environnementales locales (transports, commerces, écoles)",
+          "Interface responsive et moderne",
+          "Recherche et filtrage par localisation et type de bâtiment"
+        ],
+        "Challenges": [
+          "Intégration de la Base de Données Nationale des Bâtiments pour associer les avis aux bâtiments réels",
+          "Gestion de la modération des avis pour garantir leur fiabilité et leur pertinence",
+          "Conception d'une interface utilisateur intuitive et accessible",
+          "Mise en place d'un système de notifications pour informer les utilisateurs des nouveaux avis"
+        ],
+        "MyRole": [
+          "Développement du frontend avec Next.js, React et TailwindCSS",
+          "Implémentation du backend avec FastAPI pour gérer les avis et les données des bâtiments",
+          "Intégration de la Base de Données Nationale des Bâtiments pour associer les avis aux bâtiments réels",
+          "Mise en place de la modération des avis et du système de notifications",
+          "Déploiement et maintenance du site web"
+        ],
+        "LessonsLearned": [
+          "Gestion de données réelles et vérifiées issues de sources officielles",
+          "Importance de la modération et de la fiabilité des avis pour la crédibilité du site",
+          "Amélioration des pratiques de collaboration avec GitHub et les pull requests",
+          "Équilibre entre performance technique et expérience utilisateur"
+        ],
+        "FutureImprovements": [
+          "Ajout de fonctionnalités de géolocalisation pour trouver les avis sur les immeubles à proximité",
+          "Mise en place d'un système de notation et de classement des immeubles",
+          "Intégration de données supplémentaires sur l'environnement local (pollution, bruit, sécurité)",
+          "Développement d'une application mobile pour une accessibilité accrue"
+        ],
+        "Screenshots": ["1.png", "2.png", "3.png"]
+      }
+    },
+    {
       "Title": "Crous'tillant",
       "Slug": "croustillant",
       "Description": "Un site web qui affiche les menus des restaurants universitaires et cafétérias du Crous en France. Les données proviennent directement des sites des restaurants.",
