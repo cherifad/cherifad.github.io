@@ -1,22 +1,111 @@
 {
   "SectionProjectsList": [
     {
+      "Title": "HabiTalk",
+      "Slug": "habitalk",
+      "Description": "Verified reviews of buildings, anchored to real properties.",
+      "Link": "https://habitalk.fr",
+      "Technologies": [
+        {
+          "Name": "Next.js",
+          "Icon": "devicon:nextjs"
+        },
+        {
+          "Name": "React",
+          "Icon": "devicon:react"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "TypeScript",
+          "Icon": "devicon:typescript"
+        },
+        {
+          "Name": "FastAPI",
+          "Icon": "devicon:fastapi"
+        }
+      ],
+      "Image": "main.png",
+      "Year": "2026",
+      "Details": {
+        "Overview": "HabiTalk is a platform that centralizes verified reviews of buildings and associates them with real properties using the National Building Database. It allows residents to share their experiences and provide feedback on the quality of life in their building or neighborhood.",
+        "Problem": "Building reviews are often scattered across various websites and forums, making it difficult for residents to find reliable and verified information regarding the quality of life in their building or neighborhood.",
+        "Solution": "HabiTalk centralizes building reviews and links them to real properties through the National Building Database. Users can browse verified reviews and leave their own feedback about the quality of life in their building or neighborhood.",
+        "Features": [
+          "Browsing verified building reviews",
+          "Submitting reviews by residents",
+          "Displaying local environmental data (public transit, shops, schools)",
+          "Responsive and modern interface",
+          "Search and filtering by location and building type"
+        ],
+        "Challenges": [
+          "Integrating the National Building Database to link reviews to real properties",
+          "Managing review moderation to ensure reliability and relevance",
+          "Designing an intuitive and accessible user interface",
+          "Setting up a notification system to inform users of new reviews"
+        ],
+        "MyRole": [
+          "Frontend development using Next.js, React, and TailwindCSS",
+          "Backend implementation with FastAPI to manage reviews and building data",
+          "Integration of the National Building Database to associate reviews with real properties",
+          "Setting up review moderation and the notification system",
+          "Deployment and maintenance of the website"
+        ],
+        "LessonsLearned": [
+          "Handling real and verified data sourced from official public records",
+          "Understanding the importance of moderation and review reliability for site credibility",
+          "Improving collaboration practices with GitHub and pull requests",
+          "Balancing technical performance with user experience"
+        ],
+        "FutureImprovements": [
+          "Adding geolocation features to find reviews on nearby buildings",
+          "Implementing a rating and ranking system for buildings",
+          "Integrating additional local environment data (pollution, noise, safety)",
+          "Developing a mobile application for increased accessibility"
+        ],
+        "Screenshots": [
+          "1.png",
+          "2.png",
+          "3.png"
+        ]
+      }
+    },
+    {
       "Title": "Crous'tillant",
       "Slug": "croustillant",
       "Description": "A website to display the menus of the university restaurants and cafeterias of France's Crous. The data comes from the restaurant websites.",
       "Link": "https://croustillant.vercel.app",
       "Repository": "https://github.com/CROUStillant-Developpement/CROUStillantWeb",
       "Technologies": [
-        { "Name": "Python", "Icon": "devicon:python" },
-        { "Name": "NextJs", "Icon": "devicon:nextjs-wordmark" },
-        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
-        { "Name": "TypeScript", "Icon": "devicon:typescript" },
-        { "Name": "Prisma", "Icon": "devicon:prisma" },
-        { "Name": "PostgreSQL", "Icon": "devicon:postgresql" }
+        {
+          "Name": "Python",
+          "Icon": "devicon:python"
+        },
+        {
+          "Name": "NextJs",
+          "Icon": "devicon:nextjs-wordmark"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "TypeScript",
+          "Icon": "devicon:typescript"
+        },
+        {
+          "Name": "Prisma",
+          "Icon": "devicon:prisma"
+        },
+        {
+          "Name": "PostgreSQL",
+          "Icon": "devicon:postgresql"
+        }
       ],
       "Image": "main.png",
       "Year": "2024",
-
       "Details": {
         "Overview": "Crous'tillant is a platform that centralizes the menus of Crous university restaurants in France, giving students a simple and mobile-friendly way to check what’s available on campus.",
         "Problem": "Students often had to check multiple outdated and inconsistent restaurant websites to find menus, which made meal planning frustrating and time-consuming.",
@@ -46,7 +135,12 @@
           "Improving collaboration workflows with GitHub and PR reviews",
           "Balancing performance and usability in a production web app"
         ],
-        "Screenshots": ["1.png", "2.png", "3.png", "4.png"],
+        "Screenshots": [
+          "1.png",
+          "2.png",
+          "3.png",
+          "4.png"
+        ],
         "FutureImprovements": [
           "Implement user accounts with favorites and personalized meal planning",
           "Add nutrition and allergy information to meals",
@@ -61,8 +155,14 @@
       "Description": "A tool to synchronize playlists between Navidrome and Spotify.",
       "Link": "https://github.com/cherifad/Navidrome-Tools",
       "Technologies": [
-        { "Name": "Python", "Icon": "devicon:python" },
-        { "Name": "SQLite", "Icon": "file-icons:sqlite" }
+        {
+          "Name": "Python",
+          "Icon": "devicon:python"
+        },
+        {
+          "Name": "SQLite",
+          "Icon": "file-icons:sqlite"
+        }
       ],
       "Image": "/img/project-img/navidrome-tools/main.png",
       "Year": "2023",
@@ -104,13 +204,34 @@
       "Description": "A 2nd-year university project: recreating a wine tourism booking website inspired by vinotrip.fr, using technologies studied in class.",
       "Link": "https://github.com/cherifad/Vinodrill_Back",
       "Technologies": [
-        { "Name": "C#", "Icon": "devicon:csharp" },
-        { "Name": "PHP", "Icon": "devicon:php" },
-        { "Name": "PostgreSQL", "Icon": "devicon:postgresql" },
-        { "Name": "Vue.js", "Icon": "devicon:vuejs" },
-        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
-        { "Name": "Laravel", "Icon": "devicon:laravel" },
-        { "Name": "Python (for dataset generation)", "Icon": "devicon:python" }
+        {
+          "Name": "C#",
+          "Icon": "devicon:csharp"
+        },
+        {
+          "Name": "PHP",
+          "Icon": "devicon:php"
+        },
+        {
+          "Name": "PostgreSQL",
+          "Icon": "devicon:postgresql"
+        },
+        {
+          "Name": "Vue.js",
+          "Icon": "devicon:vuejs"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "Laravel",
+          "Icon": "devicon:laravel"
+        },
+        {
+          "Name": "Python (for dataset generation)",
+          "Icon": "devicon:python"
+        }
       ],
       "Image": "/img/project-img/vinodrill.png",
       "Year": "2022-2023",
@@ -153,9 +274,18 @@
       "Description": "My portfolio website, based on a template I found on Dribbble and customized to fit my needs.",
       "Link": "#",
       "Technologies": [
-        { "Name": "Nuxt.js", "Icon": "devicon:nuxtjs" },
-        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
-        { "Name": "TypeScript", "Icon": "devicon:typescript" }
+        {
+          "Name": "Nuxt.js",
+          "Icon": "devicon:nuxtjs"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "TypeScript",
+          "Icon": "devicon:typescript"
+        }
       ],
       "Image": "/img/project-img/portfoliov2-EN.png",
       "Year": "2024",
@@ -196,9 +326,18 @@
       "Description": "My previous portfolio built with plain HTML, CSS, and JavaScript.",
       "Link": "https://cherifad.github.io/old/",
       "Technologies": [
-        { "Name": "HTML", "Icon": "devicon:html5" },
-        { "Name": "CSS", "Icon": "devicon:css3" },
-        { "Name": "JavaScript", "Icon": "devicon:javascript" }
+        {
+          "Name": "HTML",
+          "Icon": "devicon:html5"
+        },
+        {
+          "Name": "CSS",
+          "Icon": "devicon:css3"
+        },
+        {
+          "Name": "JavaScript",
+          "Icon": "devicon:javascript"
+        }
       ],
       "Image": "/img/project-img/portfolioOld.png",
       "Year": "2022",
@@ -215,7 +354,9 @@
           "Learning web development basics",
           "Creating responsive layouts without frameworks"
         ],
-        "MyRole": ["Designed and built the site from scratch"],
+        "MyRole": [
+          "Designed and built the site from scratch"
+        ],
         "LessonsLearned": [
           "Core web technologies (HTML, CSS, JS)",
           "Responsive design basics"
@@ -232,18 +373,41 @@
       "Description": "A website to calculate an electric car route. The site uses the MapBox API to calculate the raw route and then a homemade API to place charging points on the route.",
       "Link": "https://github.com/cpe-lyon/projet-smart-ev-altinel-cherif",
       "Technologies": [
-        { "Name": "Next.js", "Icon": "devicon:nextjs" },
-        { "Name": "React", "Icon": "devicon:react" },
-        { "Name": "TailwindCSS", "Icon": "devicon:tailwindcss" },
-        { "Name": "TypeScript", "Icon": "devicon:typescript" },
-        { "Name": "Prisma", "Icon": "devicon:prisma" },
-        { "Name": "SQLite", "Icon": "file-icons:sqlite" },
-        { "Name": "MapBox", "Icon": "simple-icons:mapbox" },
-        { "Name": "OpenStreetMap", "Icon": "simple-icons:openstreetmap" }
+        {
+          "Name": "Next.js",
+          "Icon": "devicon:nextjs"
+        },
+        {
+          "Name": "React",
+          "Icon": "devicon:react"
+        },
+        {
+          "Name": "TailwindCSS",
+          "Icon": "devicon:tailwindcss"
+        },
+        {
+          "Name": "TypeScript",
+          "Icon": "devicon:typescript"
+        },
+        {
+          "Name": "Prisma",
+          "Icon": "devicon:prisma"
+        },
+        {
+          "Name": "SQLite",
+          "Icon": "file-icons:sqlite"
+        },
+        {
+          "Name": "MapBox",
+          "Icon": "simple-icons:mapbox"
+        },
+        {
+          "Name": "OpenStreetMap",
+          "Icon": "simple-icons:openstreetmap"
+        }
       ],
       "Image": "main.png",
       "Year": "2024",
-
       "Details": {
         "Overview": "Smart EV is a web application that calculates optimal electric vehicle routes. It integrates MapBox for route generation and enhances it with custom algorithms that automatically insert charging stations along the way.",
         "Problem": "Planning long trips with an electric vehicle can be stressful due to limited range and uncertainty about charging station locations.",
