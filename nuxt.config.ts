@@ -13,11 +13,10 @@ export default defineNuxtConfig({
     vueI18n: "./i18n.config.ts",
   },
   css: ["~/assets/css/style.css"],
-  ssr: false,
+  ssr: true,
   nitro: {
     prerender: {
       crawlLinks: true,
-      failOnError: false,
     },
   },
 });
